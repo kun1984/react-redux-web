@@ -53,12 +53,12 @@ const Inbox = ({ match }) => (
 ) 
 
 ReactDOM.render(
-  (<BrowserRouter>
+  (<HashRouter>
     <App>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/inbox" component={Inbox} />
     </App>
-  </BrowserRouter>),
-  document.getElementById('root')
+  </HashRouter>),
+  document.getElementById('app')
 );

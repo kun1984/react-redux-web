@@ -34,15 +34,15 @@ module.exports = {
     ]
   },
 
-  // plugins: [
-  //   new HtmlWebpackPlugin({
-  //     title: 'SuCloud Tech',
-  //     filename: path.resolve(__dirname, 'build/index.html'),
-  //     template: path.resolve(__dirname, 'template/index.html'),
-  //     chunks:["index"],
-  //     inject:true,
-  //     hash:true
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'SuCloud Tech',
+      filename: path.resolve(__dirname, 'build/index.html'),
+      template: path.resolve(__dirname, 'template/index.html'),
+      chunks:["index"],
+      inject:true,
+      hash:true
 
-  //   })
-  // ]
+    })
+  ]
 };
