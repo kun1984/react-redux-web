@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+
+import Style from '../css/style.scss';
+
 import {
   HashRouter,
   BrowserRouter,
@@ -14,7 +17,7 @@ class App extends Component {
       <div>
         <h1>App</h1>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link className="red"  to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/inbox">Inbox</Link></li>
         </ul>

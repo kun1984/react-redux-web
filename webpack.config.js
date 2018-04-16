@@ -25,12 +25,9 @@ module.exports = {
         exclude: path.resolve(__dirname, 'node_modules'),
       },
       {
-        test: /\.css/,// 增加对 CSS 文件的支持
-        // 提取出 Chunk 中的 CSS 代码到单独的文件中
-        use: ExtractTextPlugin.extract({
-          use: ['css-loader?minimize'] // 压缩 CSS 代码
-        }),
-      },
+          test: /\.scss$/,
+          loader: 'style-loader!css-loader!sass-loader'
+      }
     ]
   },
 
