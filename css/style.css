@@ -73,7 +73,7 @@ ul {
   height: 150px;
   line-height: 150px; }
   .ys-font-head > p {
-    margin: 0px; }
+    display: inline-block; }
 
 .tag {
   width: 300px;
@@ -139,5 +139,8 @@ ul {
   border-color: transparent #ffffff #ffffff transparent;
   left: -40px;
   top: 60px; }
+
+.ys-btn {
+  background: #666666; }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,8 +7,37 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script src="../plugin/jquery.min.js"></script>
+    <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../plugin/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.css"></link>
+    <style>
+    body {
+        background: gray;
+    }
+
+    .bubble:before {
+        transform: rotate(135deg);
+        background-color: #fff;
+        border-color: white;
+        left: 40px;
+        box-sizing: border-box;
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1), 0 -1px 1px 0 rgba(0, 0, 0, .2) inset;
+    }
+
+    .bubble {
+        height: 150px;
+        width: 100px;
+        background: white;
+        box-sizing: border-box;
+        box-shadow: #666 0px 0px 10px;
+    }
+    </style>
 </head>
 
 <body scroll="no">
@@ -49,32 +78,99 @@
     </nav>
     <div>
         <div class="ys-card">
-       
-                <div class="ys-font-head" >
-                    <p><span>您只需专注业务，上云管云交给</span></p>
-                </div>
-      
-                <div class="ys-font-paragraph">
-                    <p><span>作为专业的云管理服务专家（MSP），非常清楚迁云、管云中的各种挑战，并具备应对这些挑战的卓越能力。</span></p>
-                    <p><span>我们愿意为您提供与云相关的全部信息、策略支持、迁云服务、云管理服务，助您业务腾飞</span></p>
-                </div>
-       
-                <div class="text">
-                    <p id="cache8" style=""><span id="cache9" style="">我要提问</span></p>
-                </div>
+            <div class="ys-font-head">
+                <p>您只需专注业务，上云管云交给</p>
+            </div>
+            <div class="ys-font-paragraph">
+                <p><span>作为专业的云管理服务专家（MSP），非常清楚迁云、管云中的各种挑战，并具备应对这些挑战的卓越能力。</span></p>
+                <p><span>我们愿意为您提供与云相关的全部信息、策略支持、迁云服务、云管理服务，助您业务腾飞</span></p>
+            </div>
+            <div class="text">
+                <p id="cache8" style=""><button id="question" class="btn ys-btn" style="">我要提问</button></p>
+            </div>
+        </div>
+    </div>
+    <div id="myCarousel" style="display: none;" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <!-- 轮播（Carousel）指标 -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="center-block" src="../imgs/1.jpg" alt="First slide">
+                <div class="carousel-caption">标题 1</div>
+            </div>
+            <div class="item">
+                <img class="center-block" src="../imgs/2.jpg" alt="Second slide">
+                <div class="carousel-caption">标题 2</div>
+            </div>
+            <div class="item">
+                <img class="center-block" src="../imgs/3.jpg" alt="Third slide">
+                <div class="carousel-caption">标题 3</div>
+            </div>
+            <div class="item">
+                <img class="center-block" src="../imgs/4.jpg" alt="Third slide">
+                <div class="carousel-caption">标题 4</div>
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+    <div style="position: relative;margin-left: 100px;">
+        <div class="bubble">
         </div>
     </div>
 
 
 
+        <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" 
+                            aria-hidden="true">×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        模态框（Modal）标题
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    按下 ESC 按钮退出。
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" 
+                            data-dismiss="modal">关闭
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                        提交更改
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
-
-<div class="test">
-    <span class="bot"></span>
-    <span class="top"></span>
-    CSS “边框法”实现气泡对话框效果一
-</div>
-    
 </body>
+
+
+<script>
+    $("#question").click(function(){
+        $('#myModal').modal({
+            keyboard: true
+        })
+    })
+
+</script>
 
 </html>
