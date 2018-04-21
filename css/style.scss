@@ -29,6 +29,7 @@ ul {
         width: 75%;
         float: left;
         .ys-nav-ul {
+            margin-bottom:0px;
             li {
                 list-style: none;
                 margin-right:20px;
@@ -321,7 +322,33 @@ ul {
         background-color: white;
         border-bottom: 2px solid #999999;
     }
-
 }
 
+.ys-nav{
+    .nav-tabs{
+        border: 0px;
+        > li > a{
+            color: #cccccc;
+            background: #000000;
+            &:hover{
+                 background: #000000;
+                 border:0px;
+            }
+        }
+        > li.active > a, > li.active > a:hover,  > li.active > a:focus {
+            color: white;
+            cursor: default;
+            border:0px;
+            background: #000000;
 
+        }
+
+    }
+
+}
+.ys-nav-tabs.nav-tabs > li > a {
+    border: 0px;
+}
+.ys-panel.panel{
+    border:0px;
+}

@@ -46,6 +46,7 @@
             <span class="circle"></span>
         </div>
         <div class="header-middle">
+
             <ul class="ys-nav-ul">
                 <li>
                     <a href="/product/product-overview" class="header-nav-link">云规划及咨询<span class="gt icon-arrow"></span></a>
@@ -137,10 +138,10 @@
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="home">
                         <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
+                            <div class="ys-panel panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" 
+                                        <a data-toggle="collapse"  
                                            href="#collapseOne">
                                             点击我进行展开，再次点击我进行折叠。第 1 部分
                                         </a>
@@ -152,10 +153,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
+                            <div class="ys-panel panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" 
+                                        <a data-toggle="collapse" 
                                            href="#collapseTwo">
                                             点击我进行展开，再次点击我进行折叠。第 2 部分
                                         </a>
@@ -171,10 +172,10 @@
                     </div>
                     <div class="tab-pane fade" id="ios">
                         <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
+                            <div class="ys-panel panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" 
+                                        <a data-toggle="collapse"  
                                            href="#collapseOne1">
                                             点击我进行展开，再次点击我进行折叠。第 11 部分
                                         </a>
@@ -186,10 +187,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel panel-default">
+                            <div class="ys-panel panel panel-default">
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        <a data-toggle="collapse" data-parent="#accordion" 
+                                        <a data-toggle="collapse" 
                                            href="#collapseTwo2">
                                             点击我进行展开，再次点击我进行折叠。第 22 部分
                                         </a>
@@ -275,7 +276,15 @@ $("#question").click(function() {
     $('#myModal').modal({
         keyboard: true
     })
-})
+
+});
+$(function () {
+    $("#myTab a").mousemove(function (e) {
+        console.log(e)
+        $(this).tab('show');
+    });
+
+});
 </script>
 
 </html>
