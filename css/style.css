@@ -66,8 +66,11 @@ ul {
 
 .ys-card {
   background: #f2f2f2;
-  text-align: center;
-  height: 375px; }
+  width: 100%;
+  overflow: hidden; }
+
+.ys-text-center {
+  text-align: center; }
 
 .ys-h1 {
   font-family: 'PingFangSC-Regular', 'PingFang SC';
@@ -87,7 +90,6 @@ ul {
   font-style: normal;
   font-size: 28px;
   color: #1E1E1E;
-  text-align: center;
   height: 120px;
   line-height: 120px; }
   .ys-h2 > p {
@@ -247,5 +249,17 @@ ul {
 
 .ys-mt20 {
   margin-top: 20px; }
+
+.nav-tabs.ys-nav-tabs {
+  margin-bottom: 20px; }
+  .nav-tabs.ys-nav-tabs > li > a:hover {
+    background: white;
+    border: 0px; }
+  .nav-tabs.ys-nav-tabs > li.active > a, .nav-tabs.ys-nav-tabs > li.active > a:hover, .nav-tabs.ys-nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    border: 0px;
+    background-color: white;
+    border-bottom: 2px solid #999999; }
 
 /*# sourceMappingURL=style.css.map */

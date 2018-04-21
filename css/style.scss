@@ -90,8 +90,11 @@ ul {
 
 .ys-card {
     background: #f2f2f2;
+    width: 100%;
+    overflow: hidden;
+}
+.ys-text-center{
     text-align: center;
-    height:375px;
 }
 
 .ys-h1 {
@@ -113,7 +116,6 @@ ul {
     font-style: normal;
     font-size: 28px;
     color: #1E1E1E;
-    text-align: center;
     height: 120px;
     line-height: 120px;
     >p {
@@ -305,5 +307,21 @@ ul {
     margin-top: 20px;
 }
 
+
+.nav-tabs.ys-nav-tabs{
+    margin-bottom: 20px;
+    > li > a:hover {
+        background: white;
+        border: 0px;
+    }
+    > li.active > a, > li.active > a:hover,  > li.active > a:focus {
+        color: #555;
+        cursor: default;
+        border: 0px;
+        background-color: white;
+        border-bottom: 2px solid #999999;
+    }
+
+}
 
 
