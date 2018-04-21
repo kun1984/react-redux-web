@@ -8,7 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <script src="../plugin/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
+     
+  <!-- <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> -->
+  <script src="../plugin/bootstrap-hover-dropdown.min.js"></script>
+
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.css"></link>
     <style>
@@ -47,7 +53,53 @@
         </div>
         <div class="header-middle">
 
-            <ul class="ys-nav-ul">
+         <div class="navbar-collapse nav-collapse collapse navbar-header">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle js-activated">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Dropdown header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">I Have a Submenu <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a tabindex="-1" href="/test.html">Menu Item</a></li>
+              <li><a tabindex="-1" href="#">Bootstrap 3 Does Not Support Submenus</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Account <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a tabindex="-1" href="#">My Account</a></li>
+              <li class="divider"></li>
+              <li><a tabindex="-1" href="#">Change Email</a></li>
+              <li><a tabindex="-1" href="#">Change Password</a></li>
+              <li class="divider"></li>
+              <li><a tabindex="-1" href="#">Logout</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Contact <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a tabindex="-1" href="#">Contact</a></li>
+              <li><a tabindex="-1" href="#">Contact My Mom</a></li>
+              <li class="divider"></li>
+              <li><a tabindex="-1" href="#">Contact Your Mom</a></li>
+              <li><a tabindex="-1" href="#">Contact the President</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div> <!-- .nav-collapse -->
+            <ul class="ys-nav-ul" style="display: none;">
                 <li>
                     <a href="/product/product-overview" class="header-nav-link">云规划及咨询<span class="gt icon-arrow"></span></a>
                     <span class="drop-down"><img class="ys-down" src="../resources/images/home/u350.png" alt="" width="16" draggable="false"></span>
@@ -285,6 +337,12 @@ $(function () {
     });
 
 });
+
+    $(document).ready(function() {
+      $('.js-activated').dropdownHover().dropdown();
+    });
+
+
 </script>
 
 </html>
