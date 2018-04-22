@@ -7,6 +7,10 @@ ul {
     background: #000000;
     height: 50px;
     line-height: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
     >.header-left {
         float: left;
         width: 10%;
@@ -25,68 +29,23 @@ ul {
             bottom: 0;
         }
     }
-    >.header-middle {
+    >.header-middle,>.header-right {
         width: 75%;
         float: left;
-        .ys-nav-ul {
-            margin-bottom:0px;
-            li {
-                list-style: none;
-                margin-right:20px;
-            }
+    }
+    >.header-middle,>.header-right {
+        .nav>li>a:hover,
+        .nav>li>a:focus,
+        .nav .open>a:hover,
+        .nav .open>a:focus,
+        .nav .open>a {
+            background: #000000 !important;
         }
     }
     >.header-right {
         float: right;
         width: 15%;
     }
-    .ys-nav-ul {
-        li {
-            list-style: none;
-            a {
-                color: #cccccc;
-                text-decoration: none;
-                &:hover{
-                    color:white;
-                }
-            }
-        }
-        >li {
-            display: inline-block;
-            &:hover {
-                .sub-nav {
-                    display: block;
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-
-    .sub-nav {
-        display: none;
-        position: absolute;
-        box-shadow: #666 0px 0px 10px;
-        background: #ffffff;
-        padding: 0px 10px 0px 10px;
-        >li {
-            height: 50px;
-            border-bottom: 1px solid #cdcdcd;
-            font-family: 'ArialMT', 'Arial';
-            font-weight: 400;
-            font-style: normal;
-            font-size: 13px;
-            color: #333333;
-            text-align: center;
-            line-height: 50px;
-            &:hover {
-                color: black;
-            }
-        }
-        >li:last-child {
-            border: 0px;
-        }
-    }
-
 }
 
 .ys-card {
@@ -94,7 +53,8 @@ ul {
     width: 100%;
     overflow: hidden;
 }
-.ys-text-center{
+
+.ys-text-center {
     text-align: center;
 }
 
@@ -111,6 +71,7 @@ ul {
         display: inline-block;
     }
 }
+
 .ys-h2 {
     font-family: 'PingFangSC-Regular', 'PingFang SC';
     font-weight: 400;
@@ -169,95 +130,67 @@ ul {
 }
 
 
-.test {
-    width: 300px;
-    padding: 30px 20px;
-    margin-left: 60px;
-    background: #beceeb;
-    position: relative;
-}
-
-.test span {
-    width: 0;
-    height: 0;
-    font-size: 0;
-    overflow: hidden;
-    position: absolute;
-}
-
-.test span.bot {
-    border-width: 20px;
-    border-style: solid;
-    border-color: #ffffff #beceeb #beceeb #ffffff;
-    left: -40px;
-    top: 40px;
-}
-
-.test span.top {
-    border-width: 10px 20px;
-    border-style: dashed solid solid dashed;
-    border-color: transparent #ffffff #ffffff transparent;
-    left: -40px;
-    top: 60px;
-}
-
-
-.ys-btn{
+.ys-btn {
     background: #666666;
-    width:140px;
+    width: 140px;
     height: 40px;
 }
-.ys-conect{
 
-}
-.ys-question{
+.ys-conect {}
+
+.ys-question {
     margin-top: 30px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
-.ys-down{
+.ys-down {
     width: 8px;
     transform: rotate(180deg);
 }
-.ys-form-tip{
-    color:gray;
+
+.ys-form-tip {
+    color: gray;
     height: 45px;
-    line-height:45px;
+    line-height: 45px;
 }
-.ys-foot.modal-footer{
-    border-top:0px;
+
+.ys-foot.modal-footer {
+    border-top: 0px;
     text-align: center;
-    .btn{
+    .btn {
         width: 100%;
         height: 50px;
     }
 }
-.ys-modal-content.modal-content{
+
+.ys-modal-content.modal-content {
     width: 455px;
     height: 560px;
-    .form-group{
-        margin-bottom:20px;
+    .form-group {
+        margin-bottom: 20px;
     }
 }
 
 .ys-texarea.form-control {
     min-height: 100px;
 }
-.ys-input.form-control{
+
+.ys-input.form-control {
     height: 40px;
 }
-.ys-with-icon.form-control{
-    padding-left:35px;
+
+.ys-with-icon.form-control {
+    padding-left: 35px;
 }
 
 .form-group {
-    .glyphicon.glyphicon-user{
+    .glyphicon.glyphicon-user {
         display: inline-block;
         position: relative;
         top: 30px;
         margin-left: 5px;
-        &:before{
-            color:gainsboro;
+        &:before {
+            color: gainsboro;
         }
     }
 }
@@ -266,56 +199,68 @@ ul {
     resize: none;
 }
 
-.ys-left{
+.ys-left {
     float: left;
 }
-.ys-right{
+
+.ys-right {
     float: right;
 }
-.ys-bg-white{
+
+.ys-bg-white {
     background: white;
 }
 
-.ys-w10{
+.ys-w10 {
     width: 10%;
 }
-.ys-w20{
+
+.ys-w20 {
     width: 20%;
 }
-.ys-w30{
+
+.ys-w30 {
     width: 30%;
 }
-.ys-w40{
+
+.ys-w40 {
     width: 40%;
 }
-.ys-w50{
+
+.ys-w50 {
     width: 50%;
 }
-.ys-w60{
+
+.ys-w60 {
     width: 60%;
 }
-.ys-w70{
+
+.ys-w70 {
     width: 70%;
 }
-.ys-w80{
+
+.ys-w80 {
     width: 80%;
 }
-.ys-w90{
+
+.ys-w90 {
     width: 90%;
 }
 
-.ys-mt20{
+.ys-mt20 {
     margin-top: 20px;
 }
 
 
-.nav-tabs.ys-nav-tabs{
+.nav-tabs.ys-nav-tabs {
     margin-bottom: 20px;
-    > li > a:hover {
+    >li>a:hover {
         background: white;
         border: 0px;
     }
-    > li.active > a, > li.active > a:hover,  > li.active > a:focus {
+    >li.active>a,
+    >li.active>a:hover,
+    >li.active>a:focus {
         color: #555;
         cursor: default;
         border: 0px;
@@ -324,31 +269,55 @@ ul {
     }
 }
 
-.ys-nav{
-    .nav-tabs{
+.ys-nav {
+    .nav-tabs {
         border: 0px;
-        > li > a{
+        >li>a {
             color: #cccccc;
             background: #000000;
-            &:hover{
-                 background: #000000;
-                 border:0px;
+            &:hover {
+                background: #000000;
+                border: 0px;
             }
         }
-        > li.active > a, > li.active > a:hover,  > li.active > a:focus {
+        >li.active>a,
+        >li.active>a:hover,
+        >li.active>a:focus {
             color: white;
             cursor: default;
-            border:0px;
+            border: 0px;
             background: #000000;
-
         }
-
     }
-
 }
-.ys-nav-tabs.nav-tabs > li > a {
+
+.ys-nav-tabs.nav-tabs>li>a {
     border: 0px;
 }
-.ys-panel.panel{
-    border:0px;
+
+.ys-panel.panel {
+    border: 0px;
+}
+
+.nav.navbar-nav {
+    >li>a {
+        color: #cccccc;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.nav-tabs > li > a {
+    color: #cccccc;
+    text-decoration: none;
+    &:hover {
+        color: white;
+    }
+}
+
+
+.panel-default > .panel-heading{
+    background-color:white;
 }
