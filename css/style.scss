@@ -410,4 +410,48 @@ ul {
     height: 200px;
     padding: 10px;
     text-align: center;
+    overflow: hidden;
 }
+
+
+
+
+.ys-small-circle {
+    background: gray;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    width: 40px;
+}
+
+.ys-big-circle {
+    background: gray;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    width: 50px;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    line-height: 80px;
+}
+
+.has-error{
+    .help-block{
+        float:right;
+        margin-top: -25px;
+        right: 30px;
+        position: relative;
+    }
+}
+
+
+
+
+
+
+
+
+
