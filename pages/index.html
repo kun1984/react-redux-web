@@ -319,48 +319,109 @@
                    <div class="row">
                  
                       <div class="col-sm-12 col-md-4 col-lg-4 col-card">
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat. 
-                         </p>
+
+                        <div class="summary">
+                            <div class="ys-small-circle">small</div>
+                        </div>
+                        <div class="detail" style="display: none;">
+                            <div class="ys-big-circle">big</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. 
+                             </p>
+
+                        </div>
            
                       </div>
                  
                       <div class="col-sm-12 col-md-4 col-lg-4 col-card">
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                            accusantium doloremque laudantium.
-                         </p>
+                       
+                        <div class="summary">
+                            <div class="ys-small-circle">small</div>
+                        </div>
+                        <div class="detail" style="display: none;">
+                            <div class="ys-big-circle">big</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. 
+                             </p>
+
+                        </div>
+           
                       </div>
 
                      <div class="col-sm-12 col-md-4 col-lg-4 col-card">
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                            accusantium doloremque laudantium.
-                         </p>
+                      
+                        <div class="summary">
+                            <div class="ys-small-circle">small</div>
+                        </div>
+                        <div class="detail" style="display: none;">
+                            <div class="ys-big-circle">big</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. 
+                             </p>
+
+                        </div>
+           
                       </div>
                   </div>
 
                    <div class="row">
                  
                       <div class="col-sm-12 col-md-4 col-lg-4 col-card">
-                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-                            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat. 
-                         </p>
+                   
+                        <div class="summary">
+                            <div class="ys-small-circle">small</div>
+                        </div>
+                        <div class="detail" style="display: none;">
+                            <div class="ys-big-circle">big</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. 
+                             </p>
+
+                        </div>
+           
            
                       </div>
                  
                       <div class="col-sm-12 col-md-4 col-lg-4 col-card">
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                            accusantium doloremque laudantium.
-                         </p>
+                       
+                        <div class="summary">
+                            <div class="ys-small-circle">small</div>
+                        </div>
+                        <div class="detail" style="display: none;">
+                            <div class="ys-big-circle">big</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. 
+                             </p>
+
+                        </div>
+           
                       </div>
 
                      <div class="col-sm-12 col-md-4 col-lg-4 col-card">
-                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
-                            accusantium doloremque laudantium.
-                         </p>
+                     
+                        <div class="summary">
+                            <div class="ys-small-circle">small</div>
+                        </div>
+                        <div class="detail" style="display: none;">
+                            <div class="ys-big-circle">big</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                                enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                                nisi ut aliquip ex ea commodo consequat. 
+                             </p>
+
+                        </div>
+           
                       </div>
                   </div>
 
@@ -436,11 +497,24 @@ $("#question").click(function() {
 });
 $(function() {
     $("#myTab a").mousemove(function(e) {
-        console.log(e)
         $(this).tab('show');
     });
 
 });
+
+$(function() {
+    $(".col-card").mousemove(function(e) {
+        $(this).find(".summary").hide();
+        $(this).find(".detail").fadeIn(500);
+    });
+    $(".col-card").mouseleave(function(e) {
+        $(this).find(".summary").fadeIn(500);
+        $(this).find(".detail").hide();
+    });
+    
+
+});
+
 
 $(document).ready(function() {
     $('.js-activated').dropdownHover().dropdown();
