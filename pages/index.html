@@ -14,7 +14,7 @@
     <script src="../plugin/bootstrap-validate/js/bootstrapValidator.min.js"></script>
     <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.css"></link>
     <link rel="stylesheet" href="../plugin/bootstrap-validate/css/bootstrapValidator.min.css"></link>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css?v=1.0.1">
     <style>
     body {
         background: gray;
@@ -309,36 +309,20 @@
         </div>
         <div table>
             <div class="container">
-                <h1>Hello, world!</h1>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
                             <div class="ys-small-circle">small</div>
                         </div>
-                        <div class="detail" style="display: none;">
-                            <div class="ys-big-circle">big</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
                             <div class="ys-small-circle">small</div>
                         </div>
-                        <div class="detail" style="display: none;">
-                            <div class="ys-big-circle">big</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
                             <div class="ys-small-circle">small</div>
-                        </div>
-                        <div class="detail" style="display: none;">
-                            <div class="ys-big-circle">big</div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -379,6 +363,131 @@
     </div>
     <div style="position: relative;margin-left: 100px;display: none;">
         <div class="bubble">
+        </div>
+    </div>
+    <div name="weixin" class="ys-card ys-text-center ys-bg-white" style="line-height: 50px;height: 200px">
+        <p>更多云管理服务行业知识、最佳实践、行业报告，关注云宿<span class="ys-active" id="public">微信公众号：***** <img src="../resources/images/home/u500.png" class="ys-public-num"> </span></p>
+    </div>
+    <div name="certificate" class="ys-card ys-text-center">
+        <div id="u481" class="ys-h2" style="visibility: visible;">
+            <p><span>资质证书</span></p>
+        </div>
+        <div id="u83" class="text" style="visibility: visible;">
+            <span>证书1</span><span>证书2</span><span>证书3</span>
+        </div>
+        <div class="container" style="padding: 0px">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-card-with-margin">
+                    <div class="summary">
+                        <div class="ys-small-circle">small</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-card-with-margin">
+                    <div class="summary">
+                        <div class="ys-small-circle">small</div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-card-with-margin">
+                    <div class="summary">
+                        <div class="ys-small-circle">small</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ys-card-1 ">
+        <div class="container" style="padding: 0px">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div name="header" class="glyphicon-middle">
+                        <span class="glyphicon glyphicon-edit"></span>
+                        <h2 class="ys-h3" style="display: inline-block;margin-left: 10px">需要帮助</h2>
+                    </div>
+                    <div style="padding: 20px;width: 70%">
+                        <form id="form" class="form-horizontal" role="form">
+                            <div>
+                                <label for="user_id" class="ys-form-tip">很乐意帮您扫除云之旅的一切障碍。我们会在两个工作日内联系您</label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <textarea class="ys-texarea ys-no-resize form-control" name="remark" value="{remark}" id="remark" placeholder="备注"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="user_id" class="ys-form-tip">为了更高效的为您服务，希望您告诉我们您遇到的挑战
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <input type="text" class="ys-input ys-with-icon form-control" name="user_name" value="" id="user_name" placeholder="用户名">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <input type="text" class="ys-input ys-with-icon form-control" name="address" value="" id="address" placeholder="地址">
+                                </div>
+                            </div>
+                            <div class="ys-foot">
+                                <button type="button" class="btn btn-primary ys-w100">
+                                    提交更改
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div name="header" class="glyphicon-middle">
+                        <span class="glyphicon glyphicon-earphone"></span>
+                        <h2 class="ys-h3" style="display: inline-block;margin-left: 10px">更多联系方式</h2>
+                    </div>
+                    <div style="padding: 20px">
+                        <p class="ys-p-1">云宿专家团队将会协助您规划最适合您业务发展的的云方案，并提供如何管好云、用好云的专业建议及后续服务</p>
+                        <p class="ys-p-2">400-888-8888</p>
+                        <div>
+                            <img src="../resources/images/home/u500.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div foot class="ys-card ys-bg-white">
+        <div class="ys-left ys-w30 ys-text-center">
+            <div class="ys-big-circle">logo</div>
+        </div>
+        <div class="ys-left ys-w70">
+            <div class="container" style="padding: 0px">
+                <div class="row">
+                    <div class="col-sm-3 col-md-3 col-lg-2 ">
+                        <div class="ys-function-list">
+                            <p>服务</p>
+                            <p>云规划及咨询</p>
+                            <p>云迁移及咨询</p>
+                            <p>DevOps</p>
+                            <p>云优化服务</p>
+                            <p>云安全服务</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-2 ">
+                        <div class="ys-function-list">
+                            <p>资源</p>
+                            <p>文档</p>
+                            <p>Q&A</p>
+                            <p>博客</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3 col-lg-2 ">
+                        <div class="ys-function-list">
+                            <p>公司</p>
+                            <p>关于我们</p>
+                            <p>联系我们</p>
+                            <p>加入我们</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- 模态框（Modal） -->
@@ -426,40 +535,40 @@
                     </button>
                 </div>
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal -->
 </body>
 <script>
- function formValidator(){
+function formValidator() {
     $('#form').bootstrapValidator({
 
         　　　　　　　　
         message: 'This value is not valid',
-        feedbackIcons: {　　　　　　　　 
-            valid: 'glyphicon glyphicon-ok', 　　　　　　　　
-            invalid: 'glyphicon glyphicon-remove', 　　　　　　　　
-            validating: 'glyphicon glyphicon-refresh'　　　　　　　　 },
-            fields: {
-                user_name: {
-                    message: '用户名验证失败',
-                    validators: {
-                        notEmpty: {
-                            message: '用户名不能为空'
-                        }
-                    }
-                },
-                address: {
-                    validators: {
-                        notEmpty: {
-                            message: '邮箱地址不能为空'
-                        }
+        feedbackIcons: {　　　　　　　　
+            valid: 'glyphicon glyphicon-ok',
+            　　　　　　　　
+            invalid: 'glyphicon glyphicon-remove',
+            　　　　　　　　
+            validating: 'glyphicon glyphicon-refresh'　　　　　　　　
+        },
+        fields: {
+            user_name: {
+                message: '用户名验证失败',
+                validators: {
+                    notEmpty: {
+                        message: '用户名不能为空'
                     }
                 }
+            },
+            address: {
+                validators: {
+                    notEmpty: {
+                        message: '邮箱地址不能为空'
+                    }
+                }
+            }
         },
-        excluded:[":disabled",":hidden",":not(:visible)"] 
+        excluded: [":disabled", ":hidden", ":not(:visible)"]
     });
 };
 
@@ -502,13 +611,13 @@ $(function() {
 
 
 });
-  $('#myModal').on('hidden.bs.modal', function() {
-        $("#form").data('bootstrapValidator').destroy();
-        $('#form').data('bootstrapValidator', null);
-        $("#form")[0].reset();  
-        formValidator();
-       
-    });
+$('#myModal').on('hidden.bs.modal', function() {
+    $("#form").data('bootstrapValidator').destroy();
+    $('#form').data('bootstrapValidator', null);
+    $("#form")[0].reset();
+    formValidator();
+
+});
 
 $(document).ready(function() {
     $('.js-activated').dropdownHover().dropdown();

@@ -56,6 +56,12 @@ ul {
     overflow: hidden;
 }
 
+.ys-card-1 {
+    background: #f9f9f9;
+    width: 100%;
+    overflow: hidden;
+}
+
 .ys-text-center {
     text-align: center;
 }
@@ -447,11 +453,59 @@ ul {
     }
 }
 
+.ys-active{
+    color:#0399ff;
+}
+.ys-public-num{
+    position: relative;
+    top: 50px;
+    width: 100px;
+    height: 80px;
+    right: 110px;
+}
 
+.col-card-with-margin{
+    background: white;
+    height: 200px;
 
+}
+.ys-w100{
+    width: 100%;
+}
+.glyphicon-middle{
+    .glyphicon.glyphicon-edit,
+    .glyphicon.glyphicon-earphone{
+        &:before{
+            font-size: 30px;
+            color:#c6c6c6;
+        }
+    }
+}
 
-
-
-
+.ys-h3{
+    font-family: 'PingFangSC-Regular', 'PingFang SC';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    color: #1E1E1E;
+    text-align: center;
+}
+.ys-function-list{
+    >p:first-child{
+        padding-left:0px;
+        &::before{
+            content:"|";
+            font-size: 2.0em;
+            font-weight: bolder;
+            color: #797979;
+            margin-right: 10px;
+        }
+    }
+    >p{
+        height: 30px;
+        line-height: 30px;
+        padding-left:20px;
+    }
+}
 
 
