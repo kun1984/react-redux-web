@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-    <title>Untitled Document</title>
+    <title>CHINAMSP云宿，领先的云管理服务专家</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,79 +17,45 @@
     <link rel="stylesheet" href="../css/style.css?v=1.0.1">
     <style>
     body {
-        background: gray;
-    }
-
-    .bubble:before {
-        transform: rotate(135deg);
-        background-color: #fff;
-        border-color: white;
-        left: 40px;
-        box-sizing: border-box;
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        top: -10px;
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1), 0 -1px 1px 0 rgba(0, 0, 0, .2) inset;
-    }
-
-    .bubble {
-        height: 150px;
-        width: 100px;
-        background: white;
-        box-sizing: border-box;
-        box-shadow: #666 0px 0px 10px;
+        background:#f6f6f6;
     }
     </style>
 </head>
 
 <body scroll="no">
-    <nav class="ys-nav">
+    <nav class="msp-nav">
         <div class="header-left">
-            <span class="circle"></span>
+            <img class="msp-logo" src="../resources/images/logo.png">
         </div>
         <div class="header-middle">
             <div class="navbar-collapse nav-collapse collapse navbar-header">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle js-activated">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Another action</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li class="dropdown-header">Dropdown header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
+                        <a href="#part1" class="dropdown-toggle js-activated">云咨询与规划</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">I Have a Submenu <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="/test.html">Menu Item</a></li>
-                        </ul>
+                        <a href="part2" class="dropdown-toggle js-activated" data-toggle="dropdown">全栈云管理服务</a>
+                    
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Account <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">My Account</a></li>
-                            <li class="divider"></li>
-                            <li><a tabindex="-1" href="#">Change Email</a></li>
-                            <li class="divider"></li>
-                            <li><a tabindex="-1" href="#">Logout</a></li>
-                        </ul>
+                        <a href="#part3" class="dropdown-toggle js-activated" data-toggle="dropdown">行业方案 </a>
                     </li>
                     <li class="">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">Contact 
-                </a>
+                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">资源 
+                         </a>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">培训认证 
+                         </a>
+                    </li>
+                     <li class="">
+                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">关于我们 
+                         </a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="header-right">
+        <div class="header-right" style="display: none;">
             <div class="navbar-collapse nav-collapse collapse navbar-header">
                 <ul class="nav navbar-nav">
                     <li class="">
@@ -103,49 +69,33 @@
         </div>
     </nav>
     <div>
-        <div class="ys-card ys-text-center">
-            <div class="ys-h1">
+        <div class="msp-card msp-text-center">
+            <div class="msp-h1">
                 <p>您只需专注业务，上云管云交给</p>
             </div>
-            <div class="ys-paragraph">
+            <div class="msp-paragraph">
                 <p><span>作为专业的云管理服务专家（MSP），非常清楚迁云、管云中的各种挑战，并具备应对这些挑战的卓越能力。</span></p>
                 <p><span>我们愿意为您提供与云相关的全部信息、策略支持、迁云服务、云管理服务，助您业务腾飞</span></p>
             </div>
-            <div class="ys-question">
+            <div class="msp-question">
                 <p>
-                    <button id="question" class="btn btn-primary" style="">我要提问</button>
+                    <button  class="msp-ask btn btn-primary" style="">我要提问</button>
                 </p>
             </div>
-            <div id="u28" class="ys-conect">
+            <div id="u28" class="msp-conect">
                 <p style="font-size:16px;"><span style="font-size:14px;">联系销售：</span><span>400-888-8888</span></p>
             </div>
         </div>
     </div>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-        <!-- 轮播（Carousel）项目 -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img class="center-block" src="../resources/images/1.jpg" alt="First slide">
-            </div>
-            <div class="item">
-                <img class="center-block" src="../resources/images/2.jpg" alt="Second slide">
-            </div>
-            <div class="item">
-                <img class="center-block" src="../resources/images/3.jpg" alt="Third slide">
-            </div>
-            <div class="item">
-                <img class="center-block" src="../resources/images/4.jpg" alt="Third slide">
-            </div>
-        </div>
-    </div>
-    <div name="question" class="ys-card ys-bg-white">
+
+    <div name="question" class="msp-card msp-bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4">
                     <img src="../resources/images/2.jpg">
                 </div>
                 <div class="col-sm-12 col-md-8 col-lg-8">
-                    <div id="u481" class="ys-h2" style="visibility: visible;">
+                    <div id="u481" class="msp-h2" style="visibility: visible;">
                         <p><span>您有上云管云的问题？我们有对症下药的方子！</span></p>
                         <p><span><br></span></p>
                     </div>
@@ -153,7 +103,7 @@
                         <p><span>最初接触云概念后，您的内心可能产生诸多谜团，云宿针对云之旅各阶段的常见问题，与您共同探索最佳答案</span></p>
                     </div>
                     <div>
-                        <ul id="myTab" class="nav ys-nav-tabs nav-tabs ">
+                        <ul id="myTab" class="nav msp-nav-tabs nav-tabs ">
                             <li class="active">
                                 <a href="#home" data-toggle="tab">
                              菜鸟教程
@@ -161,7 +111,7 @@
                             </li>
                             <li><a href="#ios" data-toggle="tab">iOS</a></li>
                         </ul>
-                        <div id="myTabContent" class="ys-tab-content tab-content">
+                        <div id="myTabContent" class="msp-tab-content tab-content">
                             <div class="tab-pane fade in active" id="home">
                                 <div class="panel-group" id="accordion">
                                     <div class="panel panel-default">
@@ -235,8 +185,8 @@
                     <div id="u118" class="text">
                         <p><span>没有哪两家公司的业务是一模一样的，因此，不存在完全一样的上云旅程或云管理策略。我们明白，上述内容只能回应您面临的挑战中很小的一部分。任何个性化问题欢迎联系我们，很乐意与您共同探讨</span></p>
                     </div>
-                    <div class="ys-question">
-                        <button type="button" class="btn btn-primary">
+                    <div class="msp-question">
+                        <button type="button" class="msp-ask btn btn-primary">
                             我要咨询
                         </button>
                     </div>
@@ -244,8 +194,8 @@
             </div>
         </div>
     </div>
-    <div class="ys-card ys-text-center">
-        <div id="u481" class="ys-h2" style="visibility: visible;">
+    <div class="msp-card msp-text-center">
+        <div id="u481" class="msp-h2" style="visibility: visible;">
             <p><span>云宿全栈云服务，启动您的数字化转型之旅！</span></p>
             <p><span><br></span></p>
         </div>
@@ -253,36 +203,36 @@
             <p><span>我们专注于云策略咨询及规划，协助您迁移、管理、优化您的云，并全程维护您的云安全。让您轻松尽享云的弹性和高效是我们的不懈追求</span></p>
         </div>
         <div class="item ">
-            <div class="ys-banner-middle">
+            <div class="msp-banner-middle">
                 <img src="../resources/images/2.jpg" alt="Second slide">
             </div>
         </div>
-        <div class="ys-bg-white" style="overflow: hidden;background: #f9f9f9">
-            <div class="ys-content-middle ">
-                <div class="ys-left">
-                    <div class="ys-block-item" style="margin-top: 150px">
+        <div class="msp-bg-white" style="overflow: hidden;background: #f9f9f9">
+            <div class="msp-content-middle ">
+                <div class="msp-left">
+                    <div class="msp-block-item" style="margin-top: 150px">
                         <h3>云迁移服务</h3>
                         <h4>opti</h4>
                         <p>从部署、 升级、 扩展、 维护、 测试、 监测、 安全和策略管理全面自动化。但是，全面自动化也可能会引起自动化泛滥，我们提供业界最领先的DevOps 工具，帮助企业向数字化未来转型。</p>
                     </div>
-                    <div class="ys-block-item">
+                    <div class="msp-block-item">
                         <h3>云优化服务</h3>
                         <h4>opti</h4>
                         <p>从部署、 升级、 扩展、 维护、 测试、 监测、 安全和策略管理全面自动化。但是，全面自动化也可能会引起自动化泛滥，我们提供业界最领先的DevOps 工具，帮助企业向数字化未来转型。</p>
                     </div>
                 </div>
-                <div class="ys-right">
-                    <div class="ys-block-item">
+                <div class="msp-right">
+                    <div class="msp-block-item">
                         <h3>云优咨询规划</h3>
                         <h4>opti</h4>
                         <p>从部署、 升级、 扩展、 维护、 测试、 监测、 安全和策略管理全面自动化。但是，全面自动化也可能会引起自动化泛滥，我们提供业界最领先的DevOps 工具，帮助企业向数字化未来转型。</p>
                     </div>
-                    <div class="ys-block-item">
+                    <div class="msp-block-item">
                         <h3>DevOpx</h3>
                         <h4>opti</h4>
                         <p>从部署、 升级、 扩展、 维护、 测试、 监测、 安全和策略管理全面自动化。但是，全面自动化也可能会引起自动化泛滥，我们提供业界最领先的DevOps 工具，帮助企业向数字化未来转型。</p>
                     </div>
-                    <div class="ys-block-item">
+                    <div class="msp-block-item">
                         <h3>云安全</h3>
                         <h4>opti</h4>
                         <p>从部署、 升级、 扩展、 维护、 测试、 监测、 安全和策略管理全面自动化。但是，全面自动化也可能会引起自动化泛滥，我们提供业界最领先的DevOps 工具，帮助企业向数字化未来转型。</p>
@@ -291,21 +241,21 @@
             </div>
         </div>
         <div class="item">
-            <div class="ys-banner-middle">
+            <div class="msp-banner-middle">
                 <img src="../resources/images/1.jpg" alt="Second slide">
             </div>
         </div>
         <div id="u118" class="text">
             <p><span>马上开启您的数字化转型之旅</span></p>
         </div>
-        <div class="ys-question">
-            <button type="button" class="btn btn-primary">
+        <div class="msp-question">
+            <button type="button" class="msp-ask btn btn-primary">
                 我要咨询
             </button>
         </div>
     </div>
-    <div class="ys-card ys-text-center ys-bg-white">
-        <div id="u481" class="ys-h2" style="visibility: visible;">
+    <div class="msp-card msp-text-center msp-bg-white">
+        <div id="u481" class="msp-h2" style="visibility: visible;">
             <p><span>多重解决方案！</span></p>
         </div>
         <div id="u83" class="text" style="visibility: visible;">
@@ -316,47 +266,44 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
-                            <div class="ys-small-circle">small</div>
+                            <div class="msp-small-circle">small</div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
-                            <div class="ys-small-circle">small</div>
+                            <div class="msp-small-circle">small</div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
-                            <div class="ys-small-circle">small</div>
+                            <div class="msp-small-circle">small</div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
-                            <div class="ys-small-circle">small</div>
+                            <div class="msp-small-circle">small</div>
                         </div>
-                        <div class="detail" style="display: none;">
-                            <div class="ys-big-circle">big</div>
+                        <div class="detail">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
-                            <div class="ys-small-circle">small</div>
+                            <div class="msp-small-circle">small</div>
                         </div>
-                        <div class="detail" style="display: none;">
-                            <div class="ys-big-circle">big</div>
+                        <div class="detail">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4 col-lg-4 col-card">
                         <div class="summary">
-                            <div class="ys-small-circle">small</div>
+                            <div class="msp-small-circle">small</div>
                         </div>
-                        <div class="detail" style="display: none;">
-                            <div class="ys-big-circle">big</div>
+                        <div class="detail">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                             </p>
                         </div>
@@ -365,15 +312,35 @@
             </div>
         </div>
     </div>
+    <div id="myCarousel"  style="" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img class="center-block" src="../resources/images/1.jpg" alt="First slide">
+            </div>
+            <div class="item">
+                <img class="center-block" src="../resources/images/2.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <img class="center-block" src="../resources/images/3.jpg" alt="Third slide">
+            </div>
+            <div class="item">
+                <img class="center-block" src="../resources/images/4.jpg" alt="Third slide">
+            </div>
+        </div>
+    </div>
     <div style="position: relative;margin-left: 100px;display: none;">
         <div class="bubble">
         </div>
     </div>
-    <div name="weixin" class="ys-card ys-text-center ys-bg-white" style="line-height: 50px;height: 200px">
-        <p>更多云管理服务行业知识、最佳实践、行业报告，关注云宿<span class="ys-active" id="public">微信公众号：***** <img src="../resources/images/home/u500.png" class="ys-public-num"> </span></p>
+    <div name="weixin" class="msp-card msp-bg-white" style="height: 200px">
+        
+        <p class="msp-left msp-w60" style="text-align: right; margin-top: 29px;">  更多云管理服务行业知识、最佳实践、行业报告，关注云宿</p>
+        <p class="msp-right msp-w40 "><span class="msp-hover-expand msp-active" style="display: inline-block;"> 微信公众号：*****<img src="../resources/images/home/u500.png" class="msp-public-num"></span>  </p>
+     
     </div>
-    <div name="certificate" class="ys-card ys-text-center">
-        <div id="u481" class="ys-h2" style="visibility: visible;">
+    <div name="certificate" class="msp-card msp-text-center">
+        <div id="u481" class="msp-h2" style="visibility: visible;">
             <p><span>资质证书</span></p>
         </div>
         <div id="u83" class="text" style="visibility: visible;">
@@ -383,58 +350,58 @@
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4 col-card-with-margin">
                     <div class="summary">
-                        <div class="ys-small-circle">small</div>
+                        <div class="msp-small-circle">small</div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-card-with-margin">
                     <div class="summary">
-                        <div class="ys-small-circle">small</div>
+                        <div class="msp-small-circle">small</div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-card-with-margin">
                     <div class="summary">
-                        <div class="ys-small-circle">small</div>
+                        <div class="msp-small-circle">small</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="ys-card-1 ">
+    <div class="msp-card-1 ">
         <div class="container" style="padding: 0px">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div name="header" class="glyphicon-middle">
                         <span class="glyphicon glyphicon-edit"></span>
-                        <h2 class="ys-h3" style="display: inline-block;margin-left: 10px">需要帮助</h2>
+                        <h2 class="msp-h3" style="display: inline-block;margin-left: 10px">需要帮助</h2>
                     </div>
                     <div style="padding: 20px;width: 70%">
                         <form id="form" class="form-horizontal" role="form">
                             <div>
-                                <label for="user_id" class="ys-form-tip">很乐意帮您扫除云之旅的一切障碍。我们会在两个工作日内联系您</label>
+                                <label for="user_id" class="msp-form-tip">很乐意帮您扫除云之旅的一切障碍。我们会在两个工作日内联系您</label>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <textarea class="ys-texarea ys-no-resize form-control" name="remark" value="{remark}" id="remark" placeholder="备注"></textarea>
+                                    <textarea class="msp-texarea msp-no-resize form-control" name="remark" value="{remark}" id="remark" placeholder="备注"></textarea>
                                 </div>
                             </div>
                             <div>
-                                <label for="user_id" class="ys-form-tip">为了更高效的为您服务，希望您告诉我们您遇到的挑战
+                                <label for="user_id" class="msp-form-tip">为了更高效的为您服务，希望您告诉我们您遇到的挑战
                                 </label>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <span class="glyphicon glyphicon-user"></span>
-                                    <input type="text" class="ys-input ys-with-icon form-control" name="user_name" value="" id="user_name" placeholder="用户名">
+                                    <input type="text" class="msp-input msp-with-icon form-control" name="user_name" value="" id="user_name" placeholder="用户名">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <span class="glyphicon glyphicon-user"></span>
-                                    <input type="text" class="ys-input ys-with-icon form-control" name="address" value="" id="address" placeholder="地址">
+                                    <input type="text" class="msp-input msp-with-icon form-control" name="address" value="" id="address" placeholder="地址">
                                 </div>
                             </div>
-                            <div class="ys-foot">
-                                <button type="button" class="btn btn-primary ys-w100">
+                            <div class="msp-foot">
+                                <button type="button" class="msp-ask btn btn-primary msp-w100">
                                     提交更改
                                 </button>
                             </div>
@@ -444,11 +411,11 @@
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div name="header" class="glyphicon-middle">
                         <span class="glyphicon glyphicon-earphone"></span>
-                        <h2 class="ys-h3" style="display: inline-block;margin-left: 10px">更多联系方式</h2>
+                        <h2 class="msp-h3" style="display: inline-block;margin-left: 10px">更多联系方式</h2>
                     </div>
                     <div style="padding: 20px">
-                        <p class="ys-p-1">云宿专家团队将会协助您规划最适合您业务发展的的云方案，并提供如何管好云、用好云的专业建议及后续服务</p>
-                        <p class="ys-p-2">400-888-8888</p>
+                        <p class="msp-p-1">云宿专家团队将会协助您规划最适合您业务发展的的云方案，并提供如何管好云、用好云的专业建议及后续服务</p>
+                        <p class="msp-p-2">400-888-8888</p>
                         <div>
                             <img src="../resources/images/home/u500.png">
                         </div>
@@ -457,15 +424,15 @@
             </div>
         </div>
     </div>
-    <div foot class="ys-card ys-bg-white">
-        <div class="ys-left ys-w30 ys-text-center">
-            <div class="ys-big-circle">logo</div>
+    <div foot class="msp-card msp-bg-white">
+        <div class="msp-left msp-w30 msp-text-center">
+            <div class="msp-big-circle">logo</div>
         </div>
-        <div class="ys-left ys-w70">
+        <div class="msp-left msp-w70">
             <div class="container" style="padding: 0px">
                 <div class="row">
                     <div class="col-sm-3 col-md-3 col-lg-2 ">
-                        <div class="ys-function-list">
+                        <div class="msp-function-list">
                             <p>服务</p>
                             <p>云规划及咨询</p>
                             <p>云迁移及咨询</p>
@@ -475,7 +442,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3 col-md-3 col-lg-2 ">
-                        <div class="ys-function-list">
+                        <div class="msp-function-list">
                             <p>资源</p>
                             <p>文档</p>
                             <p>Q&A</p>
@@ -483,7 +450,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3 col-md-3 col-lg-2 ">
-                        <div class="ys-function-list">
+                        <div class="msp-function-list">
                             <p>公司</p>
                             <p>关于我们</p>
                             <p>联系我们</p>
@@ -497,7 +464,7 @@
     <!-- 模态框（Modal） -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="ys-modal-content modal-content">
+            <div class="msp-modal-content modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
                     </button>
@@ -508,32 +475,32 @@
                 <div class="modal-body">
                     <form id="question_form" class="form-horizontal" role="form">
                         <div>
-                            <label for="user_id" class="ys-form-tip">很乐意帮您扫除云之旅的一切障碍。我们会在两个工作日内联系您</label>
+                            <label for="user_id" class="msp-form-tip">很乐意帮您扫除云之旅的一切障碍。我们会在两个工作日内联系您</label>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <textarea class="ys-texarea ys-no-resize form-control" name="remark" value="{remark}" id="question" placeholder="备注"></textarea>
+                                <textarea class="msp-texarea msp-no-resize form-control" name="remark" value="{remark}" id="question" placeholder="备注"></textarea>
                             </div>
                         </div>
                         <div>
-                            <label for="user_id" class="ys-form-tip">为了更高效的为您服务，希望您告诉我们您遇到的挑战
+                            <label for="user_id" class="msp-form-tip">为了更高效的为您服务，希望您告诉我们您遇到的挑战
                             </label>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
                                 <span class="glyphicon glyphicon-user"></span>
-                                <input type="text" class="ys-input ys-with-icon form-control" name="username" value="" id="username" placeholder="用户名">
+                                <input type="text" class="msp-input msp-with-icon form-control" name="username" value="" id="username" placeholder="用户名">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
                                 <span class="glyphicon glyphicon-user"></span>
-                                <input type="text" class="ys-input ys-with-icon form-control" name="email" value="" id="email" placeholder="邮箱">
+                                <input type="text" class="msp-input msp-with-icon form-control" name="email" value="" id="email" placeholder="邮箱">
                             </div>
                         </div>
                     </form>
                 </div>
-                <div class="ys-foot modal-footer">
+                <div class="msp-foot modal-footer">
                     <button id="submit" type="button" class="btn btn-primary">
                         提交更改
                     </button>
@@ -615,7 +582,7 @@ $(function() {
     formValidator();
 });
 
-$("#question").click(function() {
+$(".msp-ask").click(function() {
     $('#myModal').modal({
         keyboard: true
     });
@@ -631,18 +598,20 @@ $(function() {
 
 });
 
-$(function() {
-    $(".col-card").mousemove(function(e) {
-        $(this).find(".summary").hide();
-        $(this).find(".detail").fadeIn(500);
-    });
-    $(".col-card").mouseleave(function(e) {
-        $(this).find(".summary").fadeIn(500);
-        $(this).find(".detail").hide();
-    });
+// $(function() {
+//     $(".col-card").mousemove(function(e) {
+//         $(this).find(".summary").hide();
+//         $(this).find(".detail").fadeIn(500);
+//     });
+//     $(".col-card").mouseleave(function(e) {
+//         $(this).find(".summary").fadeIn(500);
+//         $(this).find(".detail").hide();
+//     });
 
 
-});
+// });
+
+
 $('#myModal').on('hidden.bs.modal', function() {
     var form = $("#question_form");
     form.data('bootstrapValidator').destroy();
@@ -658,7 +627,6 @@ $(document).ready(function() {
 
 $("#submit").click(function() {
     var data = $("#question_form").serializeJson();
-    data
     $.ajax({
         url: "/question",
         type: 'POST',
