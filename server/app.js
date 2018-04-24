@@ -29,6 +29,8 @@ var connection = mysql.createConnection({
   database: 'china_msp'
 });
 
+connection.connect();
+
 server.listen(port, function(){
 	console.log("HTTP SERVER running @:".rainbow, ("http://localhost:" + port).cyan);
 });
@@ -40,20 +42,25 @@ webProxy(app);
 
 app.use(bodyParser.json());
 
-app.get('/add', function(req, res) {
-    
-    res.send("hello get");
-})
 
-
-app.post('/register', multipartMiddleware, function(req, res) {
-    console.log('get FormData Params: ', req.body);
-});
-
-
-
-app.post('/test', function(req, res) {
-    console.log(req.body);
+app.get('/validateUser', function(req, res) {
+    var username = req.query.username;
+	var addVip = 'select *  from msp_question  where username = ?';
+	var param = [username];
+	connection.query(addVip, param, function(error, result){
+	    if(error)
+	    {
+	        console.log(error.message);
+	        res.send("mysql connect error");
+	    }else{
+	        if(result.length>0){
+	        	res.json({"valid":false});
+	        }else{
+	        	res.json({"valid":true});
+	        }
+	       
+	    }
+	});
 
 });
 
@@ -61,17 +68,15 @@ app.post('/test', function(req, res) {
 app.get('/hello/:name/:tel', function(req, res) {
     console.log(req.params.name);
     console.log(req.params.tel);
+    console.log(req.query.id);
+    console.log(req.body);
     res.send(req.params.name);
 });
 
-app.get('/query', function(req, res) {
-    
-	connection.connect();
-
+app.post('/questions',multipartMiddleware, function(req, res) {
+	var data = req.body;
 	var addVip = 'insert into msp_question(username,email,phone,question,createDateTime) values(?,?,?,?,?)';
-	//var param = ["wangkun","test@123.com","13795687056","what are you doing?",moment(new Date).format("YYYY-MM-DD HH:mm:ss")];
-	var param = ["wangkun","test@123.com","13795687056","what are you doing?",new Date];
-	
+	var param = [data.username,data.email,data.phone,data.question,new Date];
 	connection.query(addVip, param, function(error, result){
 	    if(error)
 	    {
@@ -81,14 +86,5 @@ app.get('/query', function(req, res) {
 	    }
 	});
 
-	connection.end();
-
-
-    res.send("hello get");
-})
-
-
-app.post('/post', function(req, res) {
-    console.log("主頁post請求");
-    res.send("hello post");
+    res.json({status:1});
 })

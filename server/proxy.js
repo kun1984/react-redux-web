@@ -26,7 +26,6 @@ proxy.on("error", function(e){
 });
 
 function hasOwnProperty(obj, key){
-	console.log(obj,key)
 	return Object.prototype.hasOwnProperty.call(obj, key);
 }
 
