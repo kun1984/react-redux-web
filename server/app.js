@@ -11,7 +11,7 @@ var staticProxy = require("./static");
 
 // start server
 var app = express();
-var port =  8081;
+var port =  8080;
 
 
 var server = http.createServer(app);
@@ -19,13 +19,14 @@ var mysql      = require('mysql');
 var multipart = require('connect-multiparty');
 var bodyParser = require('body-parser');
 var multipartMiddleware = multipart();
+var moment = require('moment')
 
 
 var connection = mysql.createConnection({
   host     : '127.0.0.1',
   user     : 'root',
   password : '123456',
-  database: 'xmibear'
+  database: 'china_msp'
 });
 
 server.listen(port, function(){
@@ -67,8 +68,10 @@ app.get('/query', function(req, res) {
     
 	connection.connect();
 
-	var addVip = 'insert into seckill(name,number) values(?,?)';
-	var param = ['100元秒杀家教机',100];
+	var addVip = 'insert into msp_question(username,email,phone,question,createDateTime) values(?,?,?,?,?)';
+	//var param = ["wangkun","test@123.com","13795687056","what are you doing?",moment(new Date).format("YYYY-MM-DD HH:mm:ss")];
+	var param = ["wangkun","test@123.com","13795687056","what are you doing?",new Date];
+	
 	connection.query(addVip, param, function(error, result){
 	    if(error)
 	    {
