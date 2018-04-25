@@ -19,7 +19,7 @@ ul {
 }
 
 .msp-logo {
-    width: 160px;
+    width: 197px;
     height: 50px;
 }
 
@@ -34,7 +34,7 @@ ul {
     border-bottom: 1px solid #e6e6e6;
     >.header-left {
         float: left;
-        width: 12%;
+        width: 15%;
         height: 100%;
         position: relative;
         padding-left: 15px;
@@ -548,7 +548,7 @@ ul {
         -o-transition: all .6s ease-in-out;
         -ms-transition: all .6s ease-in-out;
         position: relative;
-        background: #green;
+        background: green;
         top:100px;
     }
 
@@ -562,4 +562,31 @@ ul {
         }
     }
 
+}
+.my-nav{
+    div[status]{
+        width: 0px;
+        margin-top: 5px;
+        border-bottom: 2px solid #911d5a;
+    }
+    
+}
+.msp-nav-selected{
+    color:#f2f2f2;
+    >div[status]{
+        width: auto;
+        margin-top: 5px;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+    }
+
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background-color: #f2f2f2;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #f2f2f2;
 }

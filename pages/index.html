@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/style.css?v=1.0.1">
     <style>
     body {
-        background:#f6f6f6;
+        background: #f6f6f6;
     }
     </style>
 </head>
@@ -29,28 +29,33 @@
         </div>
         <div class="header-middle">
             <div class="navbar-collapse nav-collapse collapse navbar-header">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#part1" class="dropdown-toggle js-activated">云咨询与规划</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="part2" class="dropdown-toggle js-activated" data-toggle="dropdown">全栈云管理服务</a>
-                    
-                    </li>
-                    <li class="dropdown">
-                        <a href="#part3" class="dropdown-toggle js-activated" data-toggle="dropdown">行业方案 </a>
+                <ul class="nav navbar-nav my-nav">
+                    <li class="msp-nav-selected">
+                        <a href="#part1" class="dropdown-toggle ">云咨询与规划</a>
+                        <div status></div>
                     </li>
                     <li class="">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">资源 
-                         </a>
+                        <a href="#part2" class="dropdown-toggle " data-toggle="dropdown">全栈云管理服务</a>
+                        <div status></div>
                     </li>
                     <li class="">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">培训认证 
-                         </a>
+                        <a href="#part3" class="dropdown-toggle " data-toggle="dropdown">行业方案 </a>
+                        <div status></div>
                     </li>
-                     <li class="">
-                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">关于我们 
+                    <li class="">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">资源 
                          </a>
+                        <div status></div>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">培训认证 
+                         </a>
+                        <div status></div>
+                    </li>
+                    <li class="">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">关于我们 
+                         </a>
+                        <div status></div>
                     </li>
                 </ul>
             </div>
@@ -79,7 +84,7 @@
             </div>
             <div class="msp-question">
                 <p>
-                    <button  class="msp-ask btn btn-primary" style="">我要提问</button>
+                    <button class="msp-ask btn btn-primary" style="">我要提问</button>
                 </p>
             </div>
             <div id="u28" class="msp-conect">
@@ -87,7 +92,6 @@
             </div>
         </div>
     </div>
-
     <div name="question" class="msp-card msp-bg-white">
         <div class="container">
             <div class="row">
@@ -312,7 +316,7 @@
             </div>
         </div>
     </div>
-    <div id="myCarousel"  style="" class="carousel slide" data-ride="carousel" data-interval="2000">
+    <div id="myCarousel" style="" class="carousel slide" data-ride="carousel" data-interval="2000">
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
             <div class="item active">
@@ -334,10 +338,8 @@
         </div>
     </div>
     <div name="weixin" class="msp-card msp-bg-white" style="height: 200px">
-        
-        <p class="msp-left msp-w60" style="text-align: right; margin-top: 29px;">  更多云管理服务行业知识、最佳实践、行业报告，关注云宿</p>
-        <p class="msp-right msp-w40 "><span class="msp-hover-expand msp-active" style="display: inline-block;"> 微信公众号：*****<img src="../resources/images/home/u500.png" class="msp-public-num"></span>  </p>
-     
+        <p class="msp-left msp-w60" style="text-align: right; margin-top: 29px;"> 更多云管理服务行业知识、最佳实践、行业报告，关注云宿</p>
+        <p class="msp-right msp-w40 "><span class="msp-hover-expand msp-active" style="display: inline-block;"> 微信公众号：*****<img src="../resources/images/home/u500.png" class="msp-public-num"></span> </p>
     </div>
     <div name="certificate" class="msp-card msp-text-center">
         <div id="u481" class="msp-h2" style="visibility: visible;">
@@ -591,6 +593,13 @@ $(".msp-ask").click(function() {
 
 
 
+$(".my-nav > li > a").click(function(e) {
+
+    $(e.target).parents("ul:first").find("li").removeClass("msp-nav-selected");
+    $(e.target).parent().addClass("msp-nav-selected");
+
+})
+
 $(function() {
     $("#myTab a").mousemove(function(e) {
         $(this).tab('show');
@@ -598,18 +607,7 @@ $(function() {
 
 });
 
-// $(function() {
-//     $(".col-card").mousemove(function(e) {
-//         $(this).find(".summary").hide();
-//         $(this).find(".detail").fadeIn(500);
-//     });
-//     $(".col-card").mouseleave(function(e) {
-//         $(this).find(".summary").fadeIn(500);
-//         $(this).find(".detail").hide();
-//     });
 
-
-// });
 
 
 $('#myModal').on('hidden.bs.modal', function() {
@@ -621,9 +619,6 @@ $('#myModal').on('hidden.bs.modal', function() {
 
 });
 
-$(document).ready(function() {
-    $('.js-activated').dropdownHover().dropdown();
-});
 
 $("#submit").click(function() {
     var data = $("#question_form").serializeJson();
