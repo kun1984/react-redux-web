@@ -34,10 +34,10 @@ ul {
     border-bottom: 1px solid #e6e6e6;
     >.header-left {
         float: left;
-        width: 15%;
+        width: 20%;
         height: 100%;
         position: relative;
-        padding-left: 15px;
+        padding-left: 60px;
     }
     >.header-middle {
         padding-left: 20px;
@@ -68,6 +68,7 @@ ul {
     background: #f2f2f2;
     width: 100%;
     overflow: hidden;
+    //background-image: url("../resources/images/2.jpg");
 }
 
 .msp-card-1 {
@@ -81,13 +82,28 @@ ul {
 }
 
 .msp-h1 {
-    font-family: 'PingFangSC-Regular', 'PingFang SC';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 33px;
-    color: #1E1E1E;
-    text-align: center;
-    margin-top: 100px;
+    font-family: PingFangSC-Thin;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #121212;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    >p {
+        display: inline-block;
+    }
+}
+
+.msp-h1-strong {
+    font-family: PingFangSC-Regular;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #121212;
+    margin-top: 20px;
+    margin-bottom: 20px;
     >p {
         display: inline-block;
     }
@@ -104,8 +120,12 @@ ul {
     }
 }
 
-
-
+.msp-card-pdlf-60{
+    padding-left:60px;
+}
+.msp-card-pd-60{
+    padding:60px;
+}
 
 .msp-paragraph {
     >p {
@@ -256,11 +276,11 @@ ul {
     >li.active>a,
     >li.active>a:hover,
     >li.active>a:focus {
-        color: #555;
+        color: #911d5a;
         cursor: default;
         border: 0px;
         background-color: white;
-        border-bottom: 2px solid #999999;
+        border-bottom: 2px solid #911d5a;
     }
 }
 
@@ -271,6 +291,7 @@ ul {
             color: #999999;
             &:hover {
                 border: 0px;
+                color:#911d5a;
             }
         }
         >li.active>a,
@@ -281,6 +302,7 @@ ul {
             border: 0px;
         }
     }
+
 }
 
 .nav-tabs>li>a {
@@ -310,10 +332,9 @@ ul {
         text-decoration: none;
         font-size: 18px;
         color: #666666;
-
-        &:hover {
-            color: black;
-        }
+    }
+    >.active > a{
+        color:#911d5a;
     }
 }
 
@@ -399,11 +420,17 @@ ul {
 }
 
 .col-card {
-    border: 1px solid #e6e6e6;
     height: 200px;
     padding: 10px;
     text-align: center;
     overflow: hidden;
+    >div{
+        width: 80%;
+        text-align: center;
+        height: 200px;
+        background: white;
+
+    }
 }
 
 
@@ -412,10 +439,12 @@ ul {
 .msp-small-circle {
     background: gray;
     border-radius: 20px;
-    height: 40px;
-    line-height: 40px;
     display: inline-block;
     width: 40px;
+    >div{
+        padding:10px;
+    }
+
 }
 
 .msp-big-circle {
@@ -567,7 +596,7 @@ ul {
     div[status]{
         width: 0px;
         margin-top: 5px;
-        border-bottom: 2px solid #911d5a;
+        border-bottom: 3px solid #911d5a;
     }
     
 }
@@ -576,11 +605,11 @@ ul {
     >div[status]{
         width: auto;
         margin-top: 5px;
-        transition: all 1s ease-in-out;
-        -webkit-transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
+        transition: all .6s ease-in-out;
+        -webkit-transition: all .6s ease-in-out;
+        -moz-transition: all .6s ease-in-out;
+        -o-transition: all .6s ease-in-out;
+        -ms-transition: all .6s ease-in-out;
     }
 
 }
@@ -589,4 +618,80 @@ ul {
 }
 .nav > li > a:hover, .nav > li > a:focus {
     background-color: #f2f2f2;
+}
+
+.msp-steps{
+    >.row{
+        >div:nth-child(2){
+            margin-top:30px;
+        }
+    }
+}
+
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #911d5a;
+}
+
+.circle1 {
+    -webkit-animation: circle 3s linear infinite;
+    animation: circle 3s linear infinite;
+}
+
+.circle2 {
+    -webkit-animation: circle 3s linear 0.8s infinite;
+    animation: circle 3s linear 0.8s infinite;
+}
+
+.circle3 {
+    -webkit-animation: circle 3s linear 1.6s infinite;
+    /* Safari and Chrome */
+    animation: circle 3s linear 1.6s infinite;
+}
+
+@-webkit-keyframes circle {
+    /* Safari and Chrome */
+    from {
+        opacity: 1;
+        -webkit-transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(3);
+    }
+}
+
+
+
+.msp-left-circle{
+    position: absolute;
+    top: 70%;
+    left: 110%;
+    margin: -100px 0 0 -100px;
+    right: 100px;
+}
+
+.msp-right-circle{
+    position: absolute;
+    top: 70%;
+    right: 85%;
+    margin: -100px 0 0 -100px;
+    left: 100px;
 }
