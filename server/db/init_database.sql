@@ -11,13 +11,13 @@ CREATE TABLE msp_user (
 );
 
 
- msp_question | CREATE TABLE `msp_question` (
+CREATE TABLE `msp_question` (
   `id` int(12) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) DEFAULT NULL,
+  `compay` varchar(100) DEFAULT NULL,
+  `phone` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `phone` varchar(50) NOT NULL,
-  `question` varchar(500) NOT NULL,
+  `question` varchar(1000) NOT NULL,
   `createDateTime` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `index_name` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 ;
+  KEY `index_name` (`phone`)
+) ;

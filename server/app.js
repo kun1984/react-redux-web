@@ -19,20 +19,22 @@ var mysql      = require('mysql');
 var multipart = require('connect-multiparty');
 var bodyParser = require('body-parser');
 var multipartMiddleware = multipart();
-var moment = require('moment')
+var moment = require('moment');
+var dbConfig = require("./dbconfig");
 
-
+console.log(dbConfig)
 var connection = mysql.createConnection({
-  host     : '127.0.0.1',
-  user     : 'root',
-  password : '123456',
-  database: 'china_msp'
+  host     : dbConfig.HOST_NAME,
+  user     : dbConfig.USER_NAME,
+  password : dbConfig.PASSWORD,
+  database: dbConfig.DB_NAME
 });
+
 
 connection.connect();
 
 server.listen(port, function(){
-	console.log("HTTP SERVER running @:".rainbow, ("http://localhost:" + port).cyan);
+	console.log("HTTP SERVER start running");
 });
 
 
@@ -64,19 +66,10 @@ app.get('/validateUser', function(req, res) {
 
 });
 
-
-app.get('/hello/:name/:tel', function(req, res) {
-    console.log(req.params.name);
-    console.log(req.params.tel);
-    console.log(req.query.id);
-    console.log(req.body);
-    res.send(req.params.name);
-});
-
 app.post('/questions',multipartMiddleware, function(req, res) {
 	var data = req.body;
-	var addVip = 'insert into msp_question(username,email,phone,question,createDateTime) values(?,?,?,?,?)';
-	var param = [data.username,data.email,data.phone,data.question,new Date];
+	var addVip = 'insert into msp_question(phone,compay,question,email,createDateTime) values(?,?,?,?,?)';
+	var param = [data.phone,data.company,data.question,"",new Date];
 	connection.query(addVip, param, function(error, result){
 	    if(error)
 	    {
