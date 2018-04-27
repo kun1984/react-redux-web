@@ -1,0 +1,793 @@
+body,
+ul {
+    margin: 0px;
+}
+
+.button {
+    width: 265px;
+    height: 73px;
+    background-color: #911d5a;
+    border-radius: 4px;
+}
+
+li{
+    list-style: none;
+}
+
+.mps-purple-font {
+    color: #911d5a;
+}
+
+.mps-purple-bg {
+    background-color: #911d5a;
+}
+
+.msp-logo {
+    height: 38px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.bt:hover{
+    color:#531334;
+}
+
+
+.msp-nav {
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    background: #f2f2f2;
+    border-bottom: 1px solid #e6e6e6;
+    >.header-left {
+        float: left;
+        width: 17%;
+        height: 100%;
+        position: relative;
+        padding-left: 60px;
+    }
+    >.header-middle {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+    >.header-middle,
+    >.header-right {
+        width: 75%;
+        float: left;
+    }
+    >.header-middle,
+    >.header-right {
+        .nav>li>a:hover,
+        .nav>li>a:focus,
+        .nav .open>a:hover,
+        .nav .open>a:focus,
+        .nav .open>a {
+            color: #911d5a;
+        }
+    }
+    >.header-right {
+        float: right;
+        width: 15%;
+    }
+}
+
+.msp-card {
+    background: #f2f2f2;
+    width: 100%;
+    overflow: hidden;
+    //background-image: url("../resources/images/2.jpg");
+}
+
+.msp-card-1 {
+    background: #f9f9f9;
+    width: 100%;
+    overflow: hidden;
+}
+
+.msp-text-center {
+    text-align: center;
+}
+
+.msp-h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: PingFangSC-Thin;
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #121212;
+    >p {
+        display: inline-block;
+    }
+}
+
+.msp-h1-strong {
+    font-family: PingFangSC-Regular;
+    font-size: 42px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #121212;
+    margin-bottom: 20px;
+    >p {
+        display: inline-block;
+    }
+}
+
+.msp-h2 {
+    font-family: 'PingFangSC-Regular', 'PingFang SC';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: #1E1E1E;
+    >p {
+        display: inline-block;
+    }
+}
+
+.msp-card-pdlf-60{
+    padding-left:60px;
+}
+.msp-card-pd-60{
+    padding:60px;
+}
+
+.msp-paragraph {
+    >p {
+        line-height: 25px;
+        margin: 0px;
+    }
+}
+
+.font_default {
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+
+.msp-btn {
+    background: #666666;
+    width: 140px;
+    height: 40px;
+}
+
+.msp-conect {
+    display: none;
+    span{
+        font-size:14px;
+    }
+}
+
+
+.msp-down {
+    width: 8px;
+    transform: rotate(180deg);
+}
+
+.msp-form-tip {
+    color: gray;
+    height: 45px;
+    line-height: 45px;
+}
+
+.msp-foot {
+    border-top: 0px;
+    text-align: center;
+    .btn {
+        width: 100%;
+        height: 50px;
+        margin-top:-15px;
+
+    }
+}
+
+.msp-modal-content.modal-content {
+    width: 80%;
+    height: 510px;
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+.msp-texarea.form-control {
+    min-height: 100px;
+}
+
+.msp-input.form-control {
+    height: 40px;
+}
+
+.msp-with-icon.form-control {
+    padding-left: 35px;
+}
+
+.form-group {
+    .glyphicon.glyphicon-user {
+        display: inline-block;
+        position: relative;
+        top: 30px;
+        margin-left: 5px;
+        &:before {
+            color: gainsboro;
+        }
+    }
+}
+
+.msp-no-resize.form-control {
+    resize: none;
+}
+
+.msp-left {
+    float: left;
+}
+
+.msp-right {
+    float: right;
+}
+
+.msp-bg-white {
+    background: white;
+}
+
+.msp-w10 {
+    width: 10%;
+}
+
+.msp-w20 {
+    width: 20%;
+}
+
+.msp-w30 {
+    width: 30%;
+}
+
+.msp-w40 {
+    width: 40%;
+}
+
+.msp-w50 {
+    width: 50%;
+}
+
+.msp-w60 {
+    width: 60%;
+}
+
+.msp-w70 {
+    width: 70%;
+}
+
+.msp-w80 {
+    width: 80%;
+}
+
+.msp-w90 {
+    width: 90%;
+}
+
+.msp-mt20 {
+    margin-top: 20px;
+}
+
+
+.nav-tabs {
+    margin-bottom: 20px;
+    >li>a:hover {
+        background: white;
+        border: 0px;
+    }
+    >li.active>a,
+    >li.active>a:hover,
+    >li.active>a:focus {
+        color: #911d5a;
+        cursor: default;
+        border: 0px;
+        background-color: white;
+        border-bottom: 2px solid #911d5a;
+    }
+}
+
+.msp-nav {
+    .nav-tabs {
+        border: 0px;
+        >li>a {
+            color: #999999;
+            &:hover {
+                border: 0px;
+                color:#911d5a;
+            }
+        }
+        >li.active>a,
+        >li.active>a:hover,
+        >li.active>a:focus {
+            color: #911d5a;
+            cursor: default;
+            border: 0px;
+        }
+    }
+
+}
+
+.nav-tabs>li>a {
+    border: 0px;
+}
+
+.panel {
+    border: 0px;
+}
+
+.nav.navbar-nav {
+    >li>a {
+        color: #999999;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+
+.msp-nav-tabs.nav-tabs {
+    a {
+        padding-left: 0px;
+    }
+
+    >li{
+        width: 160px;
+        >a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #666666;
+            text-align: center;
+        }  
+    }
+
+    >.active > a{
+        color:#911d5a;
+    }
+}
+
+.msp-tab-content {
+    .panel-body {
+        padding-left: 0px;
+    }
+
+    .panel-heading {
+        padding-left: 0;
+    }
+}
+
+.panel-default>.panel-heading {
+    background-color: white;
+}
+
+.panel-group .panel-heading+.panel-collapse>.panel-body,
+.panel-group .panel-heading+.panel-collapse>.list-group {
+    border-top: 0px;
+}
+
+
+.panel-title>a {
+    text-decoration: none;
+    font-family: 'PingFangSC-Regular', 'PingFang SC';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+    &:hover {
+        color: rgb(3, 153, 255);
+    }
+}
+
+
+.btn-primary {
+    background-color: #911d5a;
+    border:1px solid #911d5a;
+    &:hover {
+        background-color: #531334;
+    }
+}
+
+
+.msp-banner-middle {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    >img {
+        width: 100%;
+        height: 200px;
+    }
+}
+
+.msp-content-middle {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.font_default {
+    font-family: 'ArialMT', 'Arial';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+    line-height: normal;
+}
+
+.msp-block-item {
+    width: 354px;
+    height: 255px;
+    overflow: hidden;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    padding: 10px;
+    &:hover {
+        box-shadow: 5px 5px 2px #9999;
+    }
+}
+
+.col-card {
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    >div{
+        width: 80%;
+        text-align: center;
+        height: 200px;
+        background: white;
+
+    }
+}
+
+
+.msp-step{
+    padding:10px;
+    text-align: center;
+    >img{
+        position: absolute;
+        margin-top: -50px;
+        height: 40px;
+    }
+    >h3{
+        font-family: PingFangSC-Regular;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #1a1a1a;
+    }
+    >p{
+        color:#999999;
+    }
+}
+
+.msp-big-circle {
+    background: gray;
+    border-radius: 40px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.msp-small-circle {
+    background: gray;
+    border-radius: 25px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    width: 50px;
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    line-height: 80px;
+}
+
+.has-error {
+    .help-block {
+        float: right;
+        margin-top: -25px;
+        right: 30px;
+        position: relative;
+    }
+}
+
+.msp-active {
+    color: #911d5a;
+}
+
+.msp-public-num {
+    position: relative;
+    top: 50px;
+    width: 100px;
+    height: 80px;
+    right: 110px;
+}
+
+.col-card-with-margin {
+    background: white;
+    height: 200px;
+}
+
+.msp-w100 {
+    width: 100%;
+}
+
+.glyphicon-middle {
+    .glyphicon.glyphicon-edit,
+    .glyphicon.glyphicon-earphone {
+        &:before {
+            font-size: 30px;
+            color: #c6c6c6;
+        }
+    }
+}
+
+.msp-h3 {
+    font-family: 'PingFangSC-Regular', 'PingFang SC';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    color: #1E1E1E;
+    text-align: center;
+}
+
+.msp-function-list {
+    >p:first-child {
+        padding-left: 0px;
+        &::before {
+            content: "|";
+            font-size: 2.0em;
+            font-weight: bolder;
+            color: #797979;
+            margin-right: 10px;
+        }
+    }
+    >p {
+        height: 30px;
+        line-height: 30px;
+        padding-left: 20px;
+    }
+}
+
+
+.msp-hover-expand {
+    height: 50px;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -ms-transition: all .6s ease-in-out;
+    position: relative;
+    &:hover {
+         height: 200px;
+    }
+}
+
+
+
+
+.col-card {
+    // .summary{
+    //     height: 50px;
+    //     overflow: hidden;
+    //     transition: all .6s ease-in-out;
+    //     -webkit-transition: all .6s ease-in-out;
+    //     -moz-transition: all .6s ease-in-out;
+    //     -o-transition: all .6s ease-in-out;
+    //     -ms-transition: all .6s ease-in-out;
+    //     position: relative;
+    //     background: #green;
+    //     top:100px;
+    // }
+
+    // &:hover {
+    //     .summary{
+    //         transform:scale(1.5);
+    //         height: 80px;
+    //         top:50px;
+    //     }
+    // }
+    // .detail{
+    //     opacity: 0;
+    //     height: 50px;
+    //     overflow: hidden;
+    //     transition: all .6s ease-in-out;
+    //     -webkit-transition: all .6s ease-in-out;
+    //     -moz-transition: all .6s ease-in-out;
+    //     -o-transition: all .6s ease-in-out;
+    //     -ms-transition: all .6s ease-in-out;
+    //     position: relative;
+    //     top:100px;
+    // }
+
+    // &:hover {
+    //     .detail{
+    //         opacity: 1;
+    //         transform:scale(1.5);
+    //         height: 80px;
+    //         top:50px;
+    //     }
+    // }
+
+}
+.my-nav{
+    div[status]{
+        width: 0px;
+        margin-top: 5px;
+        border-bottom: 3px solid #911d5a;
+    }
+    
+}
+.msp-nav-selected{
+    color:#f2f2f2;
+    >div[status]{
+        width: auto;
+        margin-top: 5px;
+        transition: all .6s ease-in-out;
+        -webkit-transition: all .6s ease-in-out;
+        -moz-transition: all .6s ease-in-out;
+        -o-transition: all .6s ease-in-out;
+        -ms-transition: all .6s ease-in-out;
+    }
+
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background-color: #f2f2f2;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: #f2f2f2;
+}
+
+.msp-steps{
+    padding-bottom: 100px;
+    margin-top: 0px;
+    display:none;
+    >.row{
+        >div:nth-child(2){
+            margin-top:30px;
+        }
+    }
+}
+
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #911d5a;
+}
+
+.circle1 {
+    -webkit-animation: circle 3s linear infinite;
+    animation: circle 3s linear infinite;
+}
+
+.circle2 {
+    -webkit-animation: circle 3s linear 0.8s infinite;
+    animation: circle 3s linear 0.8s infinite;
+}
+
+.circle3 {
+    -webkit-animation: circle 3s linear 1.6s infinite;
+    /* Safari and Chrome */
+    animation: circle 3s linear 1.6s infinite;
+}
+
+@-webkit-keyframes circle {
+    /* Safari and Chrome */
+    from {
+        opacity: 1;
+        -webkit-transform: scale(0);
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: scale(3);
+    }
+}
+
+
+
+.msp-left-circle{
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    margin: -100px 0 0 -100px;
+    right: 100px;
+}
+
+.msp-right-circle{
+    position: absolute;
+    top: 70%;
+    right: 100%;
+    margin: -100px 0 0 -100px;
+    left: 80px;
+}
+
+
+
+
+.msp-solutions{
+    .row:not(:first-child) {
+        border-top:1px solid #e6e6e6;
+    }
+    .row:first-child{
+        >div:nth-child(2){
+            border-left:1px solid #e6e6e6;
+            border-right:1px solid #e6e6e6;
+        }
+    }
+    .row:nth-child(2){
+        >div:nth-child(2){
+            border-left:1px solid #e6e6e6;
+            border-right:1px solid #e6e6e6;
+        }
+    }
+    .row{
+        > div > div{
+            margin-top:30px;
+        }
+    }
+}
+
+.msp-ask{
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    padding-left: 74px;
+    padding-right: 74px;
+    text-align: center;
+}
+
+.panel-title > a:hover {
+    color: #911d5a;
+}
+.msp-header{
+    >h1{
+        font-family: 'PingFangSC-Regular', 'PingFang SC';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px;
+        color: #1E1E1E; 
+    }
+    >p{
+        color:#999999;
+    }
+}  
+
+.msp-map-card{
+    width: 240px;
+    background: white;
+    >div{
+        >h3,
+        >p{
+            display: none;
+        }
+    }
+}

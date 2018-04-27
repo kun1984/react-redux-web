@@ -15,14 +15,21 @@ var port =  8080;
 
 
 var server = http.createServer(app);
-var mysql      = require('mysql');
+
 var multipart = require('connect-multiparty');
 var bodyParser = require('body-parser');
 var multipartMiddleware = multipart();
 var moment = require('moment');
-var dbConfig = require("./dbconfig");
 
-console.log(dbConfig)
+var mysql      = require('mysql');
+var dbConfig =  {
+	HOST_NAME:"localhost",
+	USER_NAME:"web",
+	PASSWORD:"Chinamsp@123",
+	DB_NAME:"china_msp"
+
+}
+
 var connection = mysql.createConnection({
   host     : dbConfig.HOST_NAME,
   user     : dbConfig.USER_NAME,
