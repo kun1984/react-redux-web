@@ -6,6 +6,9 @@ ul {
 a {
     color: #911d5a;
     text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 .msp-blog-bg{
@@ -49,11 +52,9 @@ a {
     }
 }
 .msp-article-detail{
-    padding-left: 60px;
     width: 75%;
     margin: 0 auto;
     min-height:380px;
-    margin-top: 30px;
     >h2{
         margin: 0px 0px 10px; 
         padding: 0px; 
@@ -78,17 +79,33 @@ a {
         }
     }
 }
+.msp-back{
+    width: 75%;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+    >a{
+        font-size: 16px;
+    }
+}
 .msp-article-image{
     >img{
         height: 175px;
     }
 }
 .msp-page{
-    padding-left: 60px;
     height: 100px;
     width: 75%;
     margin: 0 auto;
     margin-top: 50px;
+    >.row{
+        >div:nth-child(2){
+            text-align: center;
+        }
+        >div:nth-child(3){
+            text-align: right;
+        }
+    }
 }
 .msp-blog-foot{
     height: 70px;
