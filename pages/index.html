@@ -768,6 +768,9 @@ function initNav(id){
 }
 
 function jump(id){
+    if(!id||id=="null"){
+        return;
+    }
     $('html,body').animate({scrollTop: ($(id).offset().top-70)+'px'}, 800);
 }
 
@@ -889,6 +892,7 @@ $("#submit").click(function() {
         }
     })
 });
+
 
 
 
