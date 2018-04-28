@@ -45,7 +45,7 @@ li {
     margin-top: 10px; }
   .msp-nav > .header-middle,
   .msp-nav > .header-right {
-    width: 75%;
+    width: 80%;
     float: left; }
   .msp-nav > .header-middle .nav > li > a:hover,
   .msp-nav > .header-middle .nav > li > a:focus,
@@ -566,6 +566,8 @@ ul {
 a {
   color: #911d5a;
   text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
 
 .msp-blog-bg {
   background: #ffffff; }
@@ -600,11 +602,9 @@ a {
       padding-bottom: 10px; }
 
 .msp-article-detail {
-  padding-left: 60px;
   width: 75%;
   margin: 0 auto;
-  min-height: 380px;
-  margin-top: 30px; }
+  min-height: 380px; }
   .msp-article-detail > h2 {
     margin: 0px 0px 10px;
     padding: 0px;
@@ -626,15 +626,26 @@ a {
       font-size: 16px;
       color: #8c8c8c; }
 
+.msp-back {
+  width: 75%;
+  margin: 0 auto;
+  height: 35px;
+  line-height: 35px; }
+  .msp-back > a {
+    font-size: 16px; }
+
 .msp-article-image > img {
   height: 175px; }
 
 .msp-page {
-  padding-left: 60px;
   height: 100px;
   width: 75%;
   margin: 0 auto;
   margin-top: 50px; }
+  .msp-page > .row > div:nth-child(2) {
+    text-align: center; }
+  .msp-page > .row > div:nth-child(3) {
+    text-align: right; }
 
 .msp-blog-foot {
   height: 70px;
@@ -642,5 +653,21 @@ a {
   text-align: center;
   border-top: 1px solid #e6e6e6;
   padding-right: 20px; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: red; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: red; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: red; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: red; }
 
 /*# sourceMappingURL=style.css.map */
