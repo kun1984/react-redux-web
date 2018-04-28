@@ -145,30 +145,33 @@
                             <p style="padding-left: 50px; ">很乐意帮您扫除云之旅的一切障碍。我们会在两个工作日内联系您</p>
                         </div>
                         <div style="padding-left: 50px;width: 80% ">
-                            <form id="form " class="form-horizontal " role="form ">
-                                <div class="form-group ">
-                                    <div class="col-sm-12 ">
-                                        <textarea class="msp-texarea msp-no-resize form-control " name="question " value=" " placeholder="为了更高效的为您服务，希望您告诉我们您遇到的挑战 "></textarea>
-                                    </div>
+                      
+
+                         <form id="form" class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <textarea class="msp-texarea msp-no-resize form-control" name="question" value=""  placeholder="为了更高效的为您服务，希望您告诉我们您遇到的挑战"></textarea>
                                 </div>
-                                <div class="form-group ">
-                                    <div class="col-sm-12 ">
-                                        <span class="glyphicon glyphicon-user "></span>
-                                        <input type="text " class="msp-input msp-with-icon form-control " name="phone " value=" " placeholder="手机号(必填) ">
-                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <input type="text" class="msp-input msp-with-icon form-control" name="phone" value="" placeholder="手机号(必填)">
                                 </div>
-                                <div class="form-group ">
-                                    <div class="col-sm-12 ">
-                                        <span class="glyphicon glyphicon-user "></span>
-                                        <input type="text " class="msp-input msp-with-icon form-control " name="company " value=" " placeholder="公司名(必填) ">
-                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    <input type="text" class="msp-input msp-with-icon form-control" name="company" value=""  placeholder="公司名(必填)">
                                 </div>
-                                <div class="msp-foot ">
-                                    <button id="create " type="button " style="margin-top: 20px; " class="btn btn-primary msp-w100 ">
-                                        提交
-                                    </button>
-                                </div>
-                            </form>
+                            </div>
+                            <div class="msp-foot">
+                                <button id="create" type="button" style="margin-top: 20px;" class="btn btn-primary msp-w100">
+                                    提交
+                                </button>
+                            </div>
+                        </form>
+
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 ">
@@ -303,9 +306,15 @@ $(".my-nav> li > a").click(function(e) {
     }
 });
 
+function  resetForm(id){
+    var form = $(id);
+    form.data('bootstrapValidator').destroy();
+    form.data('bootstrapValidator', null);
+    form[0].reset();
+    formValidator(id);
+}
 
 $(function() {
-    console.log("validators")
     formValidator("#form");
 });
 
