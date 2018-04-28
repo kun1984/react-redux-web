@@ -25,7 +25,7 @@
 <body >
     <header class="msp-nav">
         <div class="header-left">
-            <img id="start" class="msp-logo" src="../resources/images/logo.png">
+            <img id="start" class="msp-logo" data-id="#part0" src="../resources/images/logo.png">
         </div>
         <div class="header-middle">
             <div class="navbar-collapse nav-collapse collapse navbar-header">
@@ -71,7 +71,7 @@
     </header>
     <div style="height: 30px;width: 100%"></div>
     <div>
-    <div class="msp-card msp-card-pd-60">
+    <div id="part0" class="msp-card msp-card-pd-60 msp-main">
             <h1 class="msp-h1">
                 您只需专注业务
             </h1>
@@ -88,12 +88,12 @@
                 </p>
             </div>
             <div id="u28" class="msp-conect">
-                <p style="font-size:16px;"><span style="">联系销售：</span><span>400-888-8888</span></p>
+                <p style="font-size:16px;"><span style="">联系销售：</span><span>400-0515198</span></p>
             </div>
             <div><img style="width: 100px" src="../resources/images/home/u549.png""> </div>
         </div>
     </div>
-    <div  id="part1" class="msp-card msp-card-pd-60 msp-bg-white">
+    <div  id="part1" class="msp-card msp-card-pd-60 msp-bg-white msp-questions">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-3 col-lg-3">
@@ -479,7 +479,7 @@
 
                     <div class="msp-header">
                       
-                        <h1>  
+                        <h1 style="padding-left: 5px;">  
                             <span>
                                  <embed src="../resources/images/help.svg" style="width="30" height="30" type="image/svg+xml" />
                             </span>需要帮助
@@ -516,7 +516,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="msp-header">
-                        <h1>
+                        <h1 style="padding-left: 5px;">
                              <span>
                                  <embed src="../resources/images/phone.svg" style="width="30" height="30" type="image/svg+xml" />
                             </span>
@@ -526,7 +526,7 @@
                     </div>
 
                     <div>
-                        <p style="display: none;" class="msp-p-2">400-888-8888</p>
+                        <p style="padding-left: 50px;" class="msp-p-2">联系销售：400-0515198</p>
                         <div style="padding-left: 50px;">
                             <img style="width: 120px" src="../resources/images/home/u549.png">
                         </div>
@@ -615,6 +615,9 @@
             </div>
         </div>
     </div>
+    <footer>
+        <span>京ICP备 18000970 号    </span><span>2018 北京云宿科技有限公司</span>
+    </footer>
 </body>
 <script>
 $.fn.serializeJson = function() {
@@ -665,7 +668,6 @@ $("#start").click(function(e) {
 
 function initNav(id){
     var id = sessionStorage.getItem('nav-id');
-    console.log(id)
     if(!id){
         id = "#part1";
     }
@@ -678,6 +680,7 @@ function initNav(id){
 
 function jump(id){
     if(!id||id=="null"){
+        $('html,body').animate({scrollTop: '0px'}, 800);
         return;
     }
     $('html,body').animate({scrollTop: ($(id).offset().top-70)+'px'}, 800);

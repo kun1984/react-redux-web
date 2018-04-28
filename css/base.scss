@@ -792,5 +792,21 @@ li{
     }
 }
 
+.msp-main{
+    background-image: url('../resources/images/main.jpg');
+}
+.msp-questions{
+    background-image: url('../resources/images/questions.jpg');
+}
+footer{
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    >span{
+        padding-left: 10px;
+        padding-right: 10px;
+        color:#999999;
+    }
+}
 
 
