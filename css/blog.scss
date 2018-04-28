@@ -10,7 +10,15 @@ a {
         text-decoration: none;
     }
 }
-
+.msp-back{
+    width: 75%;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+    >a{
+        font-size: 16px;
+    }
+}
 .msp-blog-bg{
     background: #ffffff;
 }
@@ -79,15 +87,7 @@ a {
         }
     }
 }
-.msp-back{
-    width: 75%;
-    margin: 0 auto;
-    height: 35px;
-    line-height: 35px;
-    >a{
-        font-size: 16px;
-    }
-}
+
 .msp-article-image{
     >img{
         height: 175px;
@@ -114,3 +114,4 @@ a {
     border-top:1px solid #e6e6e6;
     padding-right: 20px;
 }
+
