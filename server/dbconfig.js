@@ -1,7 +1,7 @@
 
 module.exports = {
-	HOST_NAME:"127.0.0.1",
-	USER_NAME:"root",
-	PASSWORD:"123456",
-	DB_NAME:"china_msp"
+	host:"127.0.0.1",
+	user:"root",
+	password:"123456",
+	database:"china_msp"
 }

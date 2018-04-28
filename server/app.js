@@ -22,16 +22,31 @@ var multipartMiddleware = multipart();
 var moment = require('moment');
 var dbConfig = require("./dbconfig");
 
+var db;
+var connection;
 
-var connection = mysql.createConnection({
-  host     : dbConfig.HOST_NAME,
-  user     : dbConfig.USER_NAME,
-  password : dbConfig.PASSWORD,
-  database: dbConfig.DB_NAME
-});
+function handleError (err) {
+
+  if (err) {
+    // 如果是连接断开，自动重新连接
+    if (err.code === 'PROTOCOL_CONNECTION_LOST') {
+      connect();
+    } else {
+      console.error(err.stack || err);
+    }
+  }
+}
+
+// 连接数据库
+function connect () {
+  connection = mysql.createConnection(dbConfig);
+  connection.connect(handleError);
+  connection.on('error', handleError);
+}
 
 
-connection.connect();
+connect();
+
 
 server.listen(port, function(){
 	console.log("HTTP SERVER start running");
@@ -52,7 +67,6 @@ app.get('/validateUser', function(req, res) {
 	connection.query(addVip, param, function(error, result){
 	    if(error)
 	    {
-	        console.log(error.message);
 	        res.send("mysql connect error");
 	    }else{
 	        if(result.length>0){
@@ -73,11 +87,11 @@ app.post('/questions',multipartMiddleware, function(req, res) {
 	connection.query(addVip, param, function(error, result){
 	    if(error)
 	    {
-	        console.log(error.message);
+	          res.json({error:1});
+
 	    }else{
-	        console.log('insert id: '+result.insertId);
+	          res.json({error:0});
 	    }
 	});
 
-    res.json({status:1});
 })

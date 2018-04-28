@@ -1,7 +1,7 @@
 
 module.exports = {
-	HOST_NAME:"localhost",
-	USER_NAME:"web",
-	PASSWORD:"Chinamsp@123",
-	DB_NAME:"china_msp",
+	host:"localhost",
+	user:"web",
+	password:"Chinamsp@123",
+	database:"china_msp",
 }
