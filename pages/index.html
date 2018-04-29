@@ -258,7 +258,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="u118" class="text" style="margin-top: 35px;margin-bottom: 0px;">
+                    <div id="u118" class="text" style="margin-top: 55px;margin-bottom: 0px;">
                         <p><span>没有哪两家公司的业务是一模一样的，因此，不存在完全一样的上云旅程或云管理策略。我们明白，上述内容只能回应您面临的挑战中很小的一部分。任何个性化问题欢迎联系我们，很乐意与您共同探讨</span></p>
                     </div>
                     <div style="margin-bottom: 40px;">
@@ -496,13 +496,13 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span class="glyphicon glyphicon-phone"></span>
                                     <input type="text" class="msp-input msp-with-icon form-control" name="phone" value="" placeholder="手机号(必填)">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                    <span class="glyphicon glyphicon-user"></span>
+                                    <span class="glyphicon glyphicon-home"></span>
                                     <input type="text" class="msp-input msp-with-icon form-control" name="company" value=""  placeholder="公司名(必填)">
                                 </div>
                             </div>
@@ -595,13 +595,13 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <span class="glyphicon glyphicon-user"></span>
+                                <span class="glyphicon glyphicon-phone"></span>
                                 <input type="text" class="msp-input msp-with-icon form-control" name="phone" value="" placeholder="手机号(必填)">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <span class="glyphicon glyphicon-user"></span>
+                                <span class="glyphicon glyphicon-home"></span>
                                 <input type="text" class="msp-input msp-with-icon form-control" name="company" value="" id="email" placeholder="公司名(必填)">
                             </div>
                         </div>
@@ -615,6 +615,21 @@
             </div>
         </div>
     </div>
+
+
+
+    <div>
+        <div  id="succAlert" class="alert alert-success msp-alert" style="display: none;">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>成功！</strong>提交成功
+        </div>
+        <div id="errAlert" class="alert alert-warning msp-alter" style="display: none;">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>警告！</strong>提交失败
+        </div>
+
+    </div>
+
     <footer>
         <span>京ICP备 18000970 号    </span>
         <span class="glyphicon glyphicon-copyright-mark"> 
@@ -799,10 +814,14 @@ $("#submit").click(function() {
         contentType: 'application/json',
         data: JSON.stringify(data),
         success:function(){
-            $('#myModal').modal('hide')
+            $('#myModal').modal('hide');
+            $("#succAlert").fadeIn(2000);
+            $("#succAlert").fadeOut(2000);
         },
         error:function(){
-            $('#myModal').modal('hide')
+            $('#myModal').modal('hide');
+            $("#errAlert").fadeIn(2000);
+            $("#errAlert").fadeOut(2000);
         }
     })
 });
@@ -820,8 +839,12 @@ $("#create").click(function() {
         data: JSON.stringify(data),
         success:function(){
             resetForm("#qform_");
+            $("#succAlert").fadeIn(2000);
+            $("#succAlert").fadeOut(2000);
         },
         error:function(){
+            $("#errAlert").fadeIn(2000);
+            $("#errAlert").fadeOut(2000);
         }
     })
 });

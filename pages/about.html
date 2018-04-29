@@ -195,6 +195,17 @@
             </div>
         </div>
     </div>
+        <div>
+        <div  id="succAlert" class="alert alert-success msp-alert" style="display: none;">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>成功！</strong>提交成功
+        </div>
+        <div id="errAlert" class="alert alert-warning msp-alter" style="display: none;">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>警告！</strong>提交失败
+        </div>
+
+    </div>
     <footer>
         <span>京ICP备 18000970 号    </span> 
            <span class="glyphicon glyphicon-copyright-mark"> 
@@ -327,8 +338,13 @@ $("#create").click(function() {
         data: JSON.stringify(data),
         success: function() {
             resetForm("#form");
+            $("#succAlert").fadeIn(2000);
+            $("#succAlert").fadeOut(2000);
         },
-        error: function() {}
+        error: function() {
+            $("#errAlert").fadeIn(2000);
+            $("#errAlert").fadeOut(2000);
+        }
     })
 });
 </script>

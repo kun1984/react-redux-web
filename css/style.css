@@ -18,7 +18,7 @@ li {
   background-color: #911d5a; }
 
 .msp-logo {
-  height: 38px;
+  height: 25px;
   margin-top: -5px;
   cursor: pointer; }
 
@@ -36,7 +36,7 @@ li {
   border-bottom: 1px solid #e6e6e6; }
   .msp-nav > .header-left {
     float: left;
-    width: 17%;
+    width: 13%;
     height: 100%;
     position: relative;
     padding-left: 60px; }
@@ -111,7 +111,8 @@ li {
   padding-left: 60px; }
 
 .msp-card-pd-60 {
-  padding: 60px; }
+  padding: 60px;
+  padding-top: 100px; }
 
 .msp-paragraph > p {
   line-height: 25px;
@@ -131,10 +132,8 @@ li {
   width: 140px;
   height: 40px; }
 
-.msp-conect {
-  display: none; }
-  .msp-conect span {
-    font-size: 14px; }
+.msp-conect span {
+  font-size: 14px; }
 
 .msp-down {
   width: 8px;
@@ -168,12 +167,14 @@ li {
 .msp-with-icon.form-control {
   padding-left: 35px; }
 
-.form-group .glyphicon.glyphicon-user {
+.form-group .glyphicon.glyphicon-home,
+.form-group .glyphicon.glyphicon-phone {
   display: inline-block;
   position: relative;
   top: 30px;
   margin-left: 5px; }
-  .form-group .glyphicon.glyphicon-user:before {
+  .form-group .glyphicon.glyphicon-home:before,
+  .form-group .glyphicon.glyphicon-phone:before {
     color: gainsboro; }
 
 .msp-no-resize.form-control {
@@ -440,14 +441,14 @@ li {
 
 .my-nav div[status] {
   width: 0px;
-  margin-top: 5px;
-  border-bottom: 3px solid #911d5a; }
+  margin-top: 8px;
+  border-bottom: 2px solid #911d5a; }
 
 .msp-nav-selected {
   color: #f2f2f2; }
   .msp-nav-selected > div[status] {
     width: auto;
-    margin-top: 5px;
+    margin-top: 8px;
     transition: all .6s ease-in-out;
     -webkit-transition: all .6s ease-in-out;
     -moz-transition: all .6s ease-in-out;
@@ -529,8 +530,12 @@ li {
 .msp-solutions .row:nth-child(2) > div:nth-child(2) {
   border-left: 1px solid #e6e6e6;
   border-right: 1px solid #e6e6e6; }
-.msp-solutions .row > div > div {
-  margin-top: 30px; }
+.msp-solutions .row > div {
+  height: 200px; }
+  .msp-solutions .row > div > div:first-child {
+    margin-top: 35px; }
+  .msp-solutions .row > div > div:last-child {
+    margin-top: 30px; }
 
 .msp-ask {
   height: 45px;
@@ -550,7 +555,8 @@ li {
   font-size: 28px;
   color: #1E1E1E; }
 .msp-header > p {
-  color: #999999; }
+  color: #999999;
+  margin-top: 20px; }
 
 .msp-map-card {
   width: 240px;
@@ -558,6 +564,46 @@ li {
   .msp-map-card > div > h3,
   .msp-map-card > div > p {
     display: none; }
+
+.msp-main {
+  background-image: url("../resources/images/main.jpg");
+  background-position: center; }
+
+.msp-questions {
+  background-image: url("../resources/images/questions.jpg");
+  background-position: center; }
+
+.msp-idea h3 {
+  font-family: 'PingFangSC-Regular', 'PingFang SC';
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 0px; }
+
+.msp-alert {
+  width: 200px;
+  position: fixed;
+  top: 0px;
+  z-index: 1111;
+  right: 0px; }
+
+footer {
+  text-align: center;
+  height: 70px;
+  line-height: 70px; }
+  footer > span {
+    padding-left: 10px;
+    color: #999999; }
+
+.panel-group .panel {
+  height: 50px; }
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: #911d5a;
+  border-color: #911d5a; }
+
+.form-control:focus {
+  border-color: #911d5a; }
 
 body,
 ul {
@@ -569,6 +615,17 @@ a {
   a:hover {
     text-decoration: none; }
 
+.msp-back {
+  width: 75%;
+  margin: 0 auto;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 15px;
+  margin-left: 60px;
+  margin-bottom: 10px; }
+  .msp-back > a {
+    font-size: 16px; }
+
 .msp-blog-bg {
   background: #ffffff; }
 
@@ -576,8 +633,6 @@ a {
   height: calc(100% - 140px); }
   .msp-article-list > ul {
     padding: 0px; }
-    .msp-article-list > ul > li:not(:last-child) {
-      border-bottom: 1px solid #e6e6e6; }
   .msp-article-list .msp-article {
     padding-left: 60px;
     width: 75%;
@@ -588,21 +643,27 @@ a {
       font-style: normal;
       font-size: 28px;
       color: #1E1E1E;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      margin-top: 70px; }
+      .msp-article-list .msp-article > h3 > a {
+        color: #333;
+        text-decoration: none; }
     .msp-article-list .msp-article > p[date] {
       color: #999999; }
     .msp-article-list .msp-article > div[cover] {
       height: 200px;
       width: 300px; }
-      .msp-article-list .msp-article > div[cover] > img {
+      .msp-article-list .msp-article > div[cover] img {
         height: 100%; }
     .msp-article-list .msp-article > p[summary] {
       padding-top: 10px;
       width: 80%;
       padding-bottom: 10px; }
+    .msp-article-list .msp-article > p[source] {
+      margin-bottom: 40px; }
 
 .msp-article-detail {
-  width: 75%;
+  width: 55%;
   margin: 0 auto;
   min-height: 380px; }
   .msp-article-detail > h2 {
@@ -626,14 +687,6 @@ a {
       font-size: 16px;
       color: #8c8c8c; }
 
-.msp-back {
-  width: 75%;
-  margin: 0 auto;
-  height: 35px;
-  line-height: 35px; }
-  .msp-back > a {
-    font-size: 16px; }
-
 .msp-article-image > img {
   height: 175px; }
 
@@ -654,20 +707,24 @@ a {
   border-top: 1px solid #e6e6e6;
   padding-right: 20px; }
 
-::-webkit-input-placeholder {
-  /* WebKit browsers */
-  color: red; }
+.msp-about-head {
+  background-image: url("../resources/images/about.jpg"); }
 
-:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: red; }
-
-::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: red; }
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: red; }
+.msp-introduce > div:first-child > div:nth-child(1) {
+  background-image: url("../resources/images/vision.png"); }
+.msp-introduce > div:first-child > div:nth-child(2) {
+  background-image: url("../resources/images/service.jpg"); }
+.msp-introduce > div:first-child > div:nth-child(3) {
+  background-image: url("../resources/images/value.jpg"); }
+.msp-introduce > div:first-child > div {
+  text-align: center;
+  height: 250px;
+  line-height: 270px; }
+.msp-introduce > div:last-child {
+  text-align: left; }
+  .msp-introduce > div:last-child > div {
+    height: 250px; }
+    .msp-introduce > div:last-child > div > p {
+      line-height: 14px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -78,7 +78,6 @@ li{
     background: #f2f2f2;
     width: 100%;
     overflow: hidden;
-    //background-image: url("../resources/images/2.jpg");
 }
 
 .msp-card-1 {
@@ -211,7 +210,8 @@ li{
 }
 
 .form-group {
-    .glyphicon.glyphicon-user {
+    .glyphicon.glyphicon-home,
+    .glyphicon.glyphicon-phone  {
         display: inline-block;
         position: relative;
         top: 30px;
@@ -787,6 +787,7 @@ li{
     }
     >p{
         color:#999999;
+        margin-top: 20px;
     }
 }  
 
@@ -803,9 +804,11 @@ li{
 
 .msp-main{
     background-image: url('../resources/images/main.jpg');
+    background-position: center;
 }
 .msp-questions{
     background-image: url('../resources/images/questions.jpg');
+    background-position: center;
 }
 
 
@@ -816,6 +819,14 @@ li{
         margin-bottom: 20px;
         margin-top: 0px;
     }
+}
+
+.msp-alert{
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    z-index: 1111;
+    right: 0px;
 }
 
 footer{
@@ -832,7 +843,11 @@ footer{
     height: 50px;
 }
 
-
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #911d5a;
+    border-color: #911d5a;
+}
 
 .form-control:focus {
     border-color: #911d5a;
