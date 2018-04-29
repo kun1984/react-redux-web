@@ -1,28 +1,15 @@
 
 .msp-about-head{
     background-image: url('../resources/images/about.jpg');
+    background-position: right;
 }
 .msp-vision-bg{
     background-image: url('../resources/images/vision-bg.png');
+    background-position: right;
 }
 .msp-introduce{
-    >div:first-child{
-        // >div:nth-child(1){
-        //     background-image: url('../resources/images/vision.png');
-        // }
-        // >div:nth-child(2){
-        //     background-image: url('../resources/images/service.jpg');
-        // }
-        // >div:nth-child(3){
-        //     background-image: url('../resources/images/value.jpg');
-        // }
-        >div{
-        }
-    }
-
-    >div:last-child{
+    >div{
         text-align: left;
-       
         >div{
             >h3{
             }    
@@ -30,5 +17,31 @@
                 line-height: 20px;
             }
         }
+    }
+}
+
+
+.msp-idea{
+   
+    >div{
+        margin-top: 40px;
+        margin-bottom: 85px;
+        padding-left:320px;
+
+        embed{
+            position: relative;
+            margin-left: -50px;
+            top: 35px;
+        }
+    }
+    h3{
+        font-weight: 200;
+        margin-bottom: 65px;
+        margin-top: 0px;
+    }
+    p{
+        line-height: 20px;
+        margin-bottom: 20px;
+        width: 70%;
     }
 }
