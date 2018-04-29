@@ -2,21 +2,21 @@
 .msp-about-head{
     background-image: url('../resources/images/about.jpg');
 }
+.msp-vision-bg{
+    background-image: url('../resources/images/vision-bg.png');
+}
 .msp-introduce{
     >div:first-child{
-        >div:nth-child(1){
-            background-image: url('../resources/images/vision.png');
-        }
-        >div:nth-child(2){
-            background-image: url('../resources/images/service.jpg');
-        }
-        >div:nth-child(3){
-            background-image: url('../resources/images/value.jpg');
-        }
+        // >div:nth-child(1){
+        //     background-image: url('../resources/images/vision.png');
+        // }
+        // >div:nth-child(2){
+        //     background-image: url('../resources/images/service.jpg');
+        // }
+        // >div:nth-child(3){
+        //     background-image: url('../resources/images/value.jpg');
+        // }
         >div{
-            text-align: center;
-            height: 250px;
-            line-height: 270px;
         }
     }
 
@@ -24,11 +24,10 @@
         text-align: left;
        
         >div{
-            height: 250px;
             >h3{
             }    
             >p{
-                line-height: 14px;
+                line-height: 20px;
             }
         }
     }

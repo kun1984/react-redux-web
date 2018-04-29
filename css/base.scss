@@ -75,7 +75,6 @@ li{
 }
 
 .msp-card {
-    background: #f2f2f2;
     width: 100%;
     overflow: hidden;
 }
@@ -199,6 +198,8 @@ li{
 
 .msp-texarea.form-control {
     min-height: 100px;
+    padding-left: 25px;
+    padding-top: 10px;
 }
 
 .msp-input.form-control {
@@ -211,11 +212,12 @@ li{
 
 .form-group {
     .glyphicon.glyphicon-home,
-    .glyphicon.glyphicon-phone  {
+    .glyphicon.glyphicon-phone,
+    .glyphicon.glyphicon-file   {
         display: inline-block;
         position: relative;
-        top: 30px;
-        margin-left: 5px;
+        top: 32px;
+        margin-left: 8px;
         &:before {
             color: gainsboro;
         }
@@ -644,12 +646,16 @@ li{
     }
 
 }
-.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-    background-color: #f2f2f2;
+
+.my-nav{
+   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+        background-color: #f2f2f2;
+    }
+    .nav > li > a:hover, .nav > li > a:focus {
+        background-color: #f2f2f2;
+    } 
 }
-.nav > li > a:hover, .nav > li > a:focus {
-    background-color: #f2f2f2;
-}
+
 
 .msp-steps{
     padding-bottom: 100px;
@@ -777,7 +783,8 @@ li{
 .panel-title > a:hover {
     color: #911d5a;
 }
-.msp-header{
+.msp-header,
+.msp-header-with-icon{
     >h1{
         font-family: 'PingFangSC-Regular', 'PingFang SC';
         font-weight: 400;
@@ -790,6 +797,14 @@ li{
         margin-top: 20px;
     }
 }  
+.msp-header-with-icon{
+    >h1{
+        >span:last-child{
+            position: relative;
+            top: -5px;
+        }
+    }
+}
 
 .msp-map-card{
     width: 240px;
@@ -813,11 +828,22 @@ li{
 
 
 .msp-idea{
+    margin-left: 320px;
+    >div{
+        embed{
+            position: relative;
+            top: 35px;
+            margin-left: -50px;
+        }
+    }
     h3{
-        font-family: 'PingFangSC-Regular', 'PingFang SC';
-        font-weight: 400;
-        margin-bottom: 20px;
+        font-weight: 200;
+        margin-bottom: 65px;
         margin-top: 0px;
+    }
+    p{
+        line-height: 20px;
+        margin-bottom: 20px;
     }
 }
 
@@ -826,7 +852,8 @@ li{
     position: fixed;
     top: 0px;
     z-index: 1111;
-    right: 0px;
+    left: calc((100% - 200px)/2);
+    top: calc((100% - 50px)/2);
 }
 
 footer{
@@ -839,9 +866,21 @@ footer{
     }
 }
 
-.panel-group .panel{
-    height: 50px;
+.msp-nav-tabs{
+    .nav > li > a:hover, .nav > li > a:focus {
+        background-color: white;
+    }
 }
+
+.panel-group .panel{
+    min-height: 50px;
+}
+.msp-tab-content{
+	.panel {
+	      box-shadow: none;
+	} 
+}
+     
 
 .btn-primary:focus, .btn-primary.focus {
     color: #fff;
