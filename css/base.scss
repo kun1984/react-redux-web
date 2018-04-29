@@ -3,6 +3,9 @@ ul {
     margin: 0px;
 }
 
+*{
+      font-weight: 200;
+}
 .button {
     width: 265px;
     height: 73px;
@@ -93,7 +96,7 @@ li{
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 36px;
-    font-weight: normal;
+    font-weight: 200;
     font-stretch: normal;
     letter-spacing: 0px;
     color: #121212;
@@ -104,7 +107,7 @@ li{
 
 .msp-h1-strong {
     font-size: 42px;
-    font-weight: normal;
+    font-weight: 200;
     font-stretch: normal;
     letter-spacing: 0px;
     color: #121212;
@@ -140,7 +143,6 @@ li{
 }
 
 .font_default {
-    font-family: 'ArialMT', 'Arial';
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
@@ -328,6 +330,7 @@ li{
     >li>a {
         color: #999999;
         text-decoration: none;
+        font-weight:200;
         &:hover {
             color: white;
         }
@@ -377,8 +380,7 @@ li{
 
 .panel-title>a {
     text-decoration: none;
-    font-family: 'PingFangSC-Regular', 'PingFang SC';
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     font-size: 14px;
     color: #333333;
@@ -416,8 +418,7 @@ li{
 }
 
 .font_default {
-    font-family: 'ArialMT', 'Arial';
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     font-size: 13px;
     color: #333333;
@@ -461,8 +462,7 @@ li{
         height: 40px;
     }
     >h3{
-        font-family: PingFangSC-Regular;
-        font-weight: normal;
+        font-weight: 200;
         font-stretch: normal;
         letter-spacing: 0px;
         color: #1a1a1a;
@@ -534,8 +534,7 @@ li{
 }
 
 .msp-h3 {
-    font-family: 'PingFangSC-Regular', 'PingFang SC';
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     font-size: 26px;
     color: #1E1E1E;
@@ -783,8 +782,7 @@ li{
 .msp-header,
 .msp-header-with-icon{
     >h1{
-        font-family: 'PingFangSC-Regular', 'PingFang SC';
-        font-weight: 400;
+        font-weight: 200;
         font-style: normal;
         font-size: 28px;
         color: #1E1E1E; 
